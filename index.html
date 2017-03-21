@@ -17,7 +17,9 @@
 	
 	<!-- Font Awesome Icons -->
 	<link href="assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-	
+
+	<link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
+
 	<!-- Custom CSS -->
 	<link href="assets/css/custom.css" rel="stylesheet">
 	
@@ -31,13 +33,26 @@
 	<![endif]-->
 
 </head>
+<style type="text/css">
+#logo {
+	width: 106.5px;
+	/*height: 24px;*/
+}
+.navbar-nav > .active > a > div {
+    color: #0092d0 !important;
+	padding-bottom: 1px;
+    border-bottom: 2px solid #0092d0;
+}
 
+.navbar-inverse { 
+	background-color: rgba(0,0,0,1);
+}
+</style>
 <body>
 	
 	<!-- HEADER
 	================================================== -->
 	<header class="site-header" role="banner">
-		
 		<!-- NAVBAR
 		================================================== -->
 		<div class="navbar-wrapper">
@@ -50,11 +65,11 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="/"><!-- <img src="assets/img/logo.png" alt="Bootstrap to Wordpress"> -->Playsnak</a>
+						<a class="navbar-brand" href="/"><img src="assets/img/logo.png" alt="Playsnak" id="logo"></a>
 					</div>
 					<div class="navbar-collapse collapse">
 						<ul class="nav navbar-nav navbar-right">
-							<li class="active"><a href="/">about us</a></li>
+							<li class="active"><a href="/"><div>about us</div></a></li>
 							<li><a href="blog.html">game</a></li>
 							<li><a href="resources.html">jobs</a></li>
 							<li><a href="contact.html">our parteners</a></li>
@@ -67,9 +82,107 @@
 		</div>
 	</header>
 	
+
+	<!-- JOBS
+	================================================== -->
+	<section id="jobs">
+		<div class=".container-fluid">
+			<div class="row">
+				<div class="col-lg-6">image TBD
+				</div><!-- end col -->			
+				<div class="col-lg-6">
+					<h2>Jobs</h2> 
+					If you're as passionate about games as we are, and want to help rewrite the rulebook on game development and publishing, we should talk.
+
+					<div class="signup-link">
+						<a href="">Find out why being part of the Playsnak family is cool >></a>
+					</div>
+					
+				</div><!-- end col -->
+
+			</div><!-- row -->
+		</div><!-- container -->
+		</div>		
+	</section><!-- instructor -->
+
+	<!-- BLOG
+	================================================== -->
+	<section id="blog">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-lg-8">
+							<h2>Blog</h2>
+						</div><!-- end col -->	
+					</div><!-- row -->
+					<div class="row">
+						<div class="col-sm-3">
+							1
+						</div><!-- end col -->
+						<div class="col-sm-3">
+							2
+						</div><!-- end col -->			
+						<div class="col-sm-3">
+							3
+						</div><!-- end col -->
+						<div class="col-sm-3">
+							4
+						</div><!-- end col -->
+					</div><!-- row -->
+					<div class="row">
+						<div class="col-sm-3">
+							1
+						</div><!-- end col -->
+						<div class="col-sm-3">
+							2
+						</div><!-- end col -->			
+						<div class="col-sm-3">
+							3
+						</div><!-- end col -->
+						<div class="col-sm-3">
+							4
+						</div><!-- end col -->
+					</div><!-- row -->
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- NEW LETTER
+	================================================== -->
+	<section id="newsletter">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-lg-8">
+							<h2>Newsletter</h2>
+						</div><!-- end col -->	
+					</div><!-- row -->
+					<div class="row">
+						<div class="col-sm-6">
+							Sign up with your email address to receive news and updates.
+						</div><!-- end col -->
+						<div class="col-sm-6">
+							<form class="form-inline">
+	  							<div class="form-group pull-right">
+    								<label class="sr-only" for="subscribeInputEmail">Email address</label>
+    								<input type="email" class="form-control" id="subscribeInputEmail" placeholder="Email">
+									<button type="button" class="btn btn-primary">Subscribe now!</button>
+								</div>
+							</form>
+						</div><!-- end col -->			
+						
+					</div><!-- row -->
+				</div><!-- end col -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- instructor -->
+
 	<!-- PARTNER
 	================================================== -->
-	
 	<section id="parteners">
 		<div class="container">
 			<div class="row">
@@ -97,15 +210,14 @@
 			</div><!-- row -->
 		</div><!-- container -->
 	</section><!-- instructor -->
+
 	<!-- CONTACT
-	================================================== -->
-	
+	================================================== -->	
 	<section id="contact">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6">
-					<h3>Contact</h3>
-					Playsnak GmbH <br><small>Bismarckstr. 10, 10625 Berlin</small>
+					<h2>Contact</h2> Playsnak GmbH <br><small>Bismarckstr. 10, 10625 Berlin</small>
 					<a href="mailto:contact@playsnak.com">contact@playsnak.com</a>
 				</div><!-- end col -->
 				<div class="col-lg-6">
@@ -159,29 +271,31 @@
 	<script>
 		function myMap() {
 
-		  var uluru = {lat: 52.512930, lng: 13.316290};
+		  var playsnak_positon = {lat: 52.512930, lng: 13.316290};
 		  var map = new google.maps.Map(document.getElementById('google-map'), {
 		    zoom: 15,
-		    center: uluru,
+		    center: playsnak_positon,
 		    scrollwheel: false,
 		    draggable: false
 		  });
 
-		  var contentString = '<strong>Playsnak GmbH</strong><br>Bismarckstr. 10, 10625, Germany<br>';
+		  var contentString = '<strong>Playsnak GmbH</strong><br/>Bismarckstr. 10, 10625, Germany';
 
 		  var infowindow = new google.maps.InfoWindow({
 		    content: contentString
 		  });
 
 		  var marker = new google.maps.Marker({
-		    position: uluru,
+		    position: playsnak_positon,
 		    map: map,
-		    title: 'Uluru (Ayers Rock)'
+		    icon : 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+		    title: 'Playsnak GmbH'
 		  });
 
-		  marker.addListener('click', function() {
-		    infowindow.open(map, marker);
-		  });
+		  // marker.addListener('click', function() {
+		  //   // infowindow.open(map, marker);
+		  //   alert("test")
+		  // });
 
 		  infowindow.open(map,marker);
 
