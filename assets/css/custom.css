@@ -9,11 +9,11 @@ Blue Gray:  #3e4249
 /* ==== GENERAL ==== */
 
 body {
-	margin-top: 50px;
+	/*margin-top: 50px;
 	font-family: 'Teko-Semibold', sans-serif;
-	font-size: 16px;
-	background-color: black;
-	opacity: 0.8
+	font-size: 16px;*/
+	background-color: rgba(0,0,0, 0.8);
+	/*opacity: 0.8*/
 }
 
 /* ==== GLOBAL ==== */
@@ -49,7 +49,7 @@ p {
 }
 
 a:link, a:visited {
-	color: #dd5638;
+	color: #0092d0;
 }
 
 a:hover {
@@ -81,7 +81,7 @@ img {
 button, input, .btn, a.btn {
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizelegibility;
-	color: white;
+	/*color: white;*/
 }
 
 .btn {
@@ -115,12 +115,8 @@ a.text-danger:hover {
 	color: #e55939;
 }
 
-.modal-content{
-	background: url('../img/tile.jpg') top left repeat;
-}
-
 .badge.social {
-	background: #ccc;
+	background: #000;
 	font-size: 24px;
 	height: 40px;
 	width: 40px;
@@ -244,79 +240,6 @@ form textarea {
 	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
 }
 
-/* ==== HERO ==== */
-
-#hero {
-	background: url('../img/hero-bg.jpg') 50% 0 repeat fixed;
-	min-height: 500px;
-	position: relative;
-	display: table;
-	width: 100%;
-	padding: 40px 0;
-	color: white;
-	-webkit-font-smoothing: antialiased;
-	text-rendering: optimizelegibility;
-}
-
-#hero article { 
-  width: 100%;
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-}
-
-#hero .hero-text {
-	margin-top: 30px;
-}
-
-#price-timeline {
-	margin: 30px 0 60px;
-	text-align: center;
-}
-
-#price-timeline .price {
-	display: inline-block;
-	width: 30%;
-	margin: 0 2% 0 0;
-	background: #3e4249;
-	padding: 10px 20px 30px;
-	position: relative;
-	vertical-align: top;
-}
-
-#price-timeline .price.active {
-	background: #dd5638;
-}
-
-#price-timeline .price span {
-	background: #101010;
-	display: block;
-	height: 70px;
-	width: 70px;
-	text-align: center;
-	line-height: 70px;
-	font-weight: bold;
-	font-size: 24px;
-	border-radius: 100%;
-	-webkit-border-radius: 100%;
-	-moz-border-radius: 100%;
-	position: absolute;
-	bottom: -35px;
-	left: 50%;
-	margin-left: -35px;
-}
-
-#price-timeline h4 {
-	margin: 0 0 10px;
-}
-
-#price-timeline h4 small {
-	color: white;
-	font-weight: bold;
-	display: block;
-}
-
-
 /* ==== LAYOUT ==== */
 
 .row + .row {
@@ -324,7 +247,7 @@ form textarea {
 }
 
 section {
-	padding: 20px 0 0 0;
+	padding: 0px 0 20px 0;
 }
 
 .section-header {
@@ -332,7 +255,7 @@ section {
 }
 
 section h2 {
-	margin: 20px 0 40px;
+	margin: 20px 0 20px;
 }
 
 section h3 {
@@ -409,11 +332,7 @@ section.main-content {
 	color: white;
 }
 
-#parteners h2 {
-	margin: 0 0 20px;
-}
-
-#parteners .num {
+/*#parteners .num {
 	display: table;
 	font-size: 30px;
 	font-weight: bold;
@@ -440,7 +359,7 @@ section.main-content {
 	font-size: 20px;
 	font-weight: normal;
 }
-
+*/
 #kudos {
 	text-align: center;
 }
@@ -704,7 +623,12 @@ footer a:hover {
 
 #contact {
 	 background-color: white;
+	 padding-bottom: 0;
 }
+#blog {
+	 background-color: white;
+}
+
 #logo {
 	width: 106.5px;
 	height: 24px;
@@ -749,4 +673,87 @@ footer a:hover {
 	color: #0092d0;
 	background-color: rgba(0,0,0,0);
     border: 1.5px solid #0092d0;
+}
+.carousel-desc{
+	font-size: 74.3px;
+	font-family: "Teko-Light";
+	color: white;
+}
+.carousel-desc19{
+	font-size: 19.9px;
+	color: #0092d0;
+}
+.carousel-desc16{
+	font-size: 16.4px;
+	color: #0092d0;
+}
+.jobs-link > a{
+	color: #0092d0;
+	font-family: Teko;
+	font-size: 12.5px;
+	font-weight: 600;
+	
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: left;	
+}
+.carousel-desc34{
+	font-size: 34.6px;
+	color: #0092d0;
+}
+
+.carousel-caption {
+    padding-bottom: 250px;
+}
+.zero-padding {
+	padding: 0px
+}
+
+.float-div {
+	position: absolute;
+	top : 108px;
+	left : 200px;
+}
+
+.bg-blue {
+	background-color: #0092d0;
+}
+.bg-white {
+	background-color: rgba(255,255,255,1);
+}
+
+.jobs-list > li{
+	font-family: Rajdhani;
+	font-size: 14.5px;
+	font-weight: bold;
+	line-height: 1.38;
+	text-align: left;
+}
+.jobs-description {
+	font-family: Rajdhani;
+	font-size: 9.5px;
+	font-weight: 500;
+	line-height: 1.21;
+	text-align: left;
+}
+.apply-now {
+	font-family: Calibri;
+	font-size: 9.5px;
+	font-weight: 300;
+
+	line-height: 1.21;
+}
+
+#parteners{
+	background-color: #0092d0;
+}
+
+.blue-text{
+	color: #0092d0;
+}
+
+#social-div{
+	padding: 20px;
 }

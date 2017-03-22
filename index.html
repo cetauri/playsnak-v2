@@ -19,6 +19,7 @@
 	<link href="assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
 	<link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
 
 	<!-- Custom CSS -->
 	<link href="assets/css/custom.css" rel="stylesheet">
@@ -34,80 +35,22 @@
 
 </head>
 <style type="text/css">
-.carousel-desc{
-	font-size: 74.3px;
-	font-family: "Teko-Light";
-	color: white;
-}
-.carousel-desc19{
-	font-size: 19.9px;
-	color: #0092d0;
-}
-.carousel-desc16{
-	font-size: 16.4px;
-	color: #0092d0;
-}
-.jobs-link > a{
-	color: #0092d0;
+h2 > bdi {
 	font-family: Teko;
-	font-size: 12.5px;
+	font-size: 25px;
 	font-weight: 600;
-	
-	font-style: normal;
-	font-stretch: normal;
-	line-height: normal;
-	letter-spacing: normal;
-	text-align: left;	
+	padding-bottom: 5px;
+    border-bottom: 1px solid #0092d0;
 }
-.carousel-desc34{
-	font-size: 34.6px;
-	color: #0092d0;
+h2 > bdi.black-underline-title{
+    border-bottom: 1px solid gray;
 }
 
-.carousel-caption {
-    padding-bottom: 250px;
+h2 > bdi.white-underline-title{
+    border-bottom: 1px solid white;
 }
-.zero-padding {
-	padding: 0px
-}
-
-.float-div {
-	position: absolute;
-	top : 108px;
-	left : 200px;
-}
-
-.bg-blue {
-	background-color: #0092d0;
-}
-.bg-white {
-	background-color: rgba(255,255,255,1);
-}
-
-.jobs-list > li{
-	font-family: Rajdhani;
-	font-size: 14.5px;
-	font-weight: bold;
-	line-height: 1.38;
-	text-align: left;
-}
-.jobs-description {
-	font-family: Rajdhani;
-	font-size: 9.5px;
-	font-weight: 500;
-	line-height: 1.21;
-	text-align: left;
-}
-.apply-now {
-	font-family: Calibri;
-	font-size: 9.5px;
-	font-weight: 300;
-
-	line-height: 1.21;
-}
-
-#parteners{
-	background-color: #0092d0;
+.mailLink{
+	text-decoration: underline;
 }
 </style>
 <body>
@@ -249,7 +192,7 @@ the imagination of gamers long into the future. </em> -->
 				<div class="col-lg-6" >image TBD
 				</div><!-- end col -->			
 				<div class="col-lg-6 bg-white">
-					<h2>Jobs</h2> 
+					<h2><bdi class="black-underline-title">Jobs</bdi></h2>
 					<p class="jobs-description">If you're as passionate about games as we are, and want to help rewrite the rulebook on game development and publishing, we should talk.</p>
 					
 					<ul class="jobs-list">
@@ -299,10 +242,7 @@ the imagination of gamers long into the future. </em> -->
 		</div><!-- container -->
 		</div>		
 	</section><!-- instructor -->
-<style type="text/css">
 
-
-</style>
 	<!-- BLOG
 	================================================== -->
 	<section id="blog">
@@ -311,7 +251,7 @@ the imagination of gamers long into the future. </em> -->
 				<div class="col-md-12">
 					<div class="row">
 						<div class="col-lg-8">
-							<h2>Blog</h2>
+							<h2><bdi class="black-underline-title">Blog</bdi></h2>
 						</div><!-- end col -->	
 					</div><!-- row -->
 					<div class="row">
@@ -347,7 +287,24 @@ the imagination of gamers long into the future. </em> -->
 		</div>
 	</section>
 
+<style type="text/css">
+.news-letter-desc {
+	font-family: 'Rajdhani';
+	font-size: 14.5px;	
+}	
 
+#contact-div{
+	font-family: 'Rajdhani-Medium';
+	font-size: 12px;
+}
+
+#contact-div > small{
+	color: #959595;
+}
+/*.subscribe-now{
+	width: 200px;
+}*/
+</style>
 	<!-- NEW LETTER
 	================================================== -->
 	<section id="newsletter">
@@ -356,18 +313,18 @@ the imagination of gamers long into the future. </em> -->
 				<div class="col-md-12">
 					<div class="row">
 						<div class="col-lg-8">
-							<h2>Newsletter</h2>
+							<h2><bdi class="blue-underline-title blue-text">Newsletter</bdi></h2>
 						</div><!-- end col -->	
 					</div><!-- row -->
 					<div class="row">
-						<div class="col-sm-6">
+						<div class="col-lg-6 news-letter-desc blue-text">
 							Sign up with your email address to receive news and updates.
 						</div><!-- end col -->
-						<div class="col-sm-6">
+						<div class="col-lg-6">
 							<form class="form-inline">
-	  							<div class="form-group pull-right">
+	  							<div class="form-group pull-right" style="background-color: yellow">
     								<label class="sr-only" for="subscribeInputEmail">Email address</label>
-    								<input type="email" class="form-control" id="subscribeInputEmail" placeholder="Email">
+    								<input type="email" class="form-control" id="subscribeInputEmail" placeholder="Email address">
 									<button type="button" class="btn btn-primary">Subscribe now!</button>
 								</div>
 							</form>
@@ -387,12 +344,12 @@ the imagination of gamers long into the future. </em> -->
 				<div class="col-md-12">
 					<div class="row">
 						<div class="col-lg-8">
-							<h2>Our Parteners</h2>
+							<h2><bdi class="white-underline-title">Our Parteners</bdi></h2>
 						</div><!-- end col -->	
 					</div><!-- row -->
 					<div class="row">
 						<div class="col-md-3">
-							<a href="http://www.kcubeventures.co.kr/" target="_blank"><img src="assets/img/kcube_logo.png" align="kCube"></a>
+							<a href="http://www.kcubeventures.co.kr/en/" target="_blank"><img src="assets/img/kcube_logo.png" align="kCube"></a>
 						</div><!-- end col -->
 						<div class="col-md-3">
 							<a href="http://www.plustonic.com/" target="_blank"><img src="assets/img/tonic_logo.png" align="+tonic"></a>
@@ -414,18 +371,23 @@ the imagination of gamers long into the future. </em> -->
 	<section id="contact">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6">
-					<h2>Contact</h2> Playsnak GmbH <br><small>Bismarckstr. 10, 10625 Berlin</small>
-					<a href="mailto:contact@playsnak.com">contact@playsnak.com</a>
+				<div class="col-lg-6" id="contact-div">
+					<h2><bdi class="black-underline-title">Contact</bdi></h2> 
+					<stong>Playsnak GmbH</stong> <br/>
+					<small>Bismarckstr. 10, 10625 Berlin</small><br/>
+					<a href="mailto:contact@playsnak.com" class="mailLink">contact@playsnak.com</a>
 				</div><!-- end col -->
 				<div class="col-lg-6">
-					<a href="https://plus.google.com/116123520062570463504" class="badge social gplus" target="_blank"><i class="fa fa-google-plus"></i></a>
-					<a href="https://twitter.com/PlaysnakGames" class="badge social twitter" target="_blank"><i class="fa fa-twitter"></i></a>
-					<a href="https://www.linkedin.com/company-beta/5125840/" class="badge social linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
-					<a href="https://www.facebook.com/Playsnak-232741640506468/" class="badge social facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+					<div class="pull-right" id="social-div">
+						<a href="https://plus.google.com/116123520062570463504" class="badge social gplus" target="_blank"><i class="fa fa-google"></i></a>
+						<a href="https://twitter.com/PlaysnakGames" class="badge social twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+						<a href="https://www.linkedin.com/company-beta/5125840/" class="badge social linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+						<a href="https://www.facebook.com/Playsnak-232741640506468/" class="badge social facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+					</div>
 				</div><!-- end col -->
 			</div><!-- row -->
 		</div><!-- container -->
+		<br/>
 		<div class=".container-fluid">
 			<div id="google-map"></div>
 		</div>		
@@ -438,22 +400,25 @@ the imagination of gamers long into the future. </em> -->
 			<div class="col-sm-6">
 				<nav>
 					<ul class="list-unstyled list-inline">
-						<li><a href="">Imprint</a></li>
-						<li><a href="">Privacy Policy</a></li>
+						<li>
+							<a href="#" data-toggle="modal" data-target="#Imprint-Modal">Imprint</a>
+						</li>
+						<li>
+							<a href="#" data-toggle="modal" data-target="#Policy-Modal">Privacy Policy</a>
+						</li>
 					</ul>
 				</nav>
 			</div>
 			<div class="col-sm-6">
 				<nav>
 					<ul class="list-unstyled list-inline pull-right">
-						<li><a href="">Playsnak GmbH</a></li>
-						<li><a href="">Bismarckstr. 10, 10625 Berlin</a></li>
+						<li><strong>Playsnak GmbH</strong></li>
+						<li>Bismarckstr. 10, 10625 Berlin</li>
 					</ul>
 				</nav>
 			</div><!-- end col -->
 		</div><!-- container -->
 	</footer>
-
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -466,7 +431,9 @@ the imagination of gamers long into the future. </em> -->
     
     <script type="text/javascript" src="//use.typekit.net/gla7wnd.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-	<script>
+
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbWn70yk2gZLyTcX3Ahfxnd2JkCDKYekA&callback=myMap"></script>
+	<script type="text/javascript">
 		function myMap() {
 
 		  var playsnak_positon = {lat: 52.512930, lng: 13.316290};
@@ -498,9 +465,78 @@ the imagination of gamers long into the future. </em> -->
 		  infowindow.open(map,marker);
 
 		}
-		</script>
+	</script>
 
-		<script async defer
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbWn70yk2gZLyTcX3Ahfxnd2JkCDKYekA&callback=myMap"></script>
+	<!-- MODAL
+	================================================== -->
+    <!-- modal Imprint -->
+    <div class="modal fade bs-example-modal-md" id="Imprint-Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h3 class="modal-title" id="myModalLabel">Playsnak GmbH</h3>
+	      </div>
+	      <div class="modal-body">
+	        <p>Pappelallee 78/79</p>
+	        <p>10437 Berlin, Germany</p>
+	        <p>contact@playsnak.com</p>
+	        <p>Tel: +49 306098490330</p>
+	        <p>Fax: +49 1805004555242</p>
+	        <p>Managing Director: Paha Schulz</p>
+	        <p>Commercial Register: Amtsgericht Charlottenburg; HRB: 168743</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>	
+
+	<!-- modal Privacy Policy -->
+	<div class="modal fade bs-example-modal-md" id="Policy-Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h3 class="modal-title" id="myModalLabel">Privacy Policy</h3>
+	      </div>
+	      <div class="modal-body">
+	        <p>At Playsnak GmbH, we value your comments, suggestions and feedback. Our Privacy Policy sets out how we collect, use and disclose “personal information” and other “non-personal information” we have gathered about you.</p>
+	        <h4>What is Personal Information and why do we collect it from you?</h4>
+	        <p>‘Personal Information’ is information or an opinion that identifies you as an individual. We collect and store your email when you sign up for our newsletter (which currently doesn’t exist, but is planned for the future), or where you nominate to specifically allow our games to collect your email, directly as a game setting or indirectly through opting in via social media such as Facebook connect. If you contact us directly for any reason, we may also keep a copy of that correspondence. Your email is collected only to keep you informed of new Playsnak products and changes to our existing products.</p>
+	        <h4>Sensitive Information</h4>
+	        <p>Sensitive information is information or opinion about such things as an individual’s racial or ethnic origin, political opinions, membership of a political association, religious or philosophical beliefs, membership of a professional body, criminal records or health information.</p>
+	        <p>Playsnak will not attempt to obtain nor record any sensitive information.</p>
+	        <h4>Disclosure of Personal Information</h4>
+	        <P>We will not sell, trade, rent or disclose any of the personal information you provide to us for any reason, without your prior consent. Otherwise, your Personal Information will only be disclosed where required or allowable by applicable law.</P>
+	        <h4>Security of Personal Information</h4>
+	        <P>Your Personal Information is stored offsite in a manner that reasonably protects it from misuse, loss, unauthorized access, modification or disclosure.</P>
+	        <P>We don’t guarantee website links or policy of authorized third parties and you access those sites at your own risk.</P>
+	        <h4>Accessing Your Information</h4>
+	        <P>If your personal information changes, or if you no longer desire our service, you may re­quest us to correct, update, or delete inaccuracies by making the change within your account settings or by contacting us at contact@playsnak.com. You may also request to review personal information stored or saved about you by contacting us at contact@playsnak.com. We may not accommodate a request to change information if we believe the change would violate any law or legal requirement or cause the information to be incorrect.</P>
+	        <h4>Collection of other ‘Non-Personal’ Information</h4>
+	        <P>Though Playsnak itself does not use cookies in order to track your movement around the web, our websites and apps may contain APIs from third parties. Specifically, Playsnak’s websites (http://playsnak.com and http://puzzlecaffe.com) use Google Analytics to help analyze how users use the site. The tool uses cookies to collect internet log information and visitor behavior information in an anonymous form. The information generated by the cookie about your use of the website, including your IP address, is transmitted to Google. This information is then used to evaluate use of our website and to compile statistical reports on website activity.</P>
+	        <h4>Our third party partners, and their privacy policies are as follows:</h4>
+	        <P>Google Analytics &amp; Google AdMob: <a href="https://www.google.com/policies/privacy/" target="_blank">https://www.google.com/policies/privacy/</a></P>
+	        <p>Facebook: <a href="https://www.facebook.com/about/privacy/" target="_blank">https://www.facebook.com/about/privacy/</a></p>
+	        <p>Amazon Web services: <a href="https://aws.amazon.com/privacy/" target="_blank">https://aws.amazon.com/privacy/</a></p>
+	        <p>Firebase: <a href="https://www.firebase.com/terms/privacy-policy.html" target="_blank">https://www.firebase.com/terms/privacy-policy.html</a></p>
+	        <p>Chartboost: <a href="https://answers.chartboost.com/hc/en-us/articles/200780269-Privacy-Policy" target="_blank">https://answers.chartboost.com/hc/en-us/articles/200780269-Privacy-Policy</a></p>
+	        <h4>Policy Updates</h4>
+	        <p>This Policy may change from time to time. The most current version of our Privacy Policy can be found at http://playsnak.com/privacy.html. We will always keep this up to date so that you know what information we will collect from you, how we may use it, and when we may disclose it.</p>
+	        <h4>Complaints</h4>
+	        <p>You can lodge a complaint with us about any breach of our Privacy Policy at the address below.</p>
+	        <h4>Privacy Policy Contact Information</h4>
+	        <p>If you have any questions about our Privacy Policy, please contact us at: contact@playsnak.com</p>
+	        <p>Privacy policy last updated February 2016</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
 </body>
 </html>
