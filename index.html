@@ -10,7 +10,7 @@
 	<meta name="author" content="">
 	<link rel="icon" href="img/favicon.ico">
 	
-	<title>Bootstrap to WordPress</title>
+	<title>Playsnak, Global Next-Generation Game Company</title>
 	
 	<!-- Bootstrap core CSS -->
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -47,6 +47,18 @@
 	font-size: 16.4px;
 	color: #0092d0;
 }
+.jobs-link > a{
+	color: #0092d0;
+	font-family: Teko;
+	font-size: 12.5px;
+	font-weight: 600;
+	
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: left;	
+}
 .carousel-desc34{
 	font-size: 34.6px;
 	color: #0092d0;
@@ -55,21 +67,48 @@
 .carousel-caption {
     padding-bottom: 250px;
 }
+.zero-padding {
+	padding: 0px
+}
 
-/*.carousel-control {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 15%;
-    font-size: 20px;
-    color: #fff;
-    text-align: center;
-    text-shadow: 0 1px 2px rgba(0,0,0,.6);
-    background-color: rgba(0,0,0,0);
-    filter: alpha(opacity=50);
-    opacity: .5;
-}*/
+.float-div {
+	position: absolute;
+	top : 108px;
+	left : 200px;
+}
+
+.bg-blue {
+	background-color: #0092d0;
+}
+.bg-white {
+	background-color: rgba(255,255,255,1);
+}
+
+.jobs-list > li{
+	font-family: Rajdhani;
+	font-size: 14.5px;
+	font-weight: bold;
+	line-height: 1.38;
+	text-align: left;
+}
+.jobs-description {
+	font-family: Rajdhani;
+	font-size: 9.5px;
+	font-weight: 500;
+	line-height: 1.21;
+	text-align: left;
+}
+.apply-now {
+	font-family: Calibri;
+	font-size: 9.5px;
+	font-weight: 300;
+
+	line-height: 1.21;
+}
+
+#parteners{
+	background-color: #0092d0;
+}
 </style>
 <body>
 	
@@ -162,28 +201,108 @@
 		</div>	
 	</section>
 
+	<!-- ABOUT US
+	================================================== -->
+	<section id="aboutus">
+		<div class=".container-fluid">
+			<div class="row"><!-- 
+			<div style="background-image: url(assets/img/main_about_leftimage.png); height: 200px; width: 400px; border: 1px solid black;">Example of a DIV element with a background image:</div> -->
+
+				<div class="col-md-6 zero-padding" style="background: url(assets/img/main_about_leftimage.png);">
+					<img src="assets/img/main_about_leftimage.png">
+					<!-- <div class="float-div"> -->
+<!-- 						<h2>About us</h2>
+						<em>Playsnak is a start-up company focused on mobile games publishing and 
+Virtual Reality development. 
+Today, as mobile gaming matures and immersive VR experiences gain traction, 
+our goal is to merge these mediums by creating games that combine the accessibility 
+of mobile play with the stunning possibilities of ever-evolving VR technologies. 
+Skillfully adding VR components to already-amazing games enables us – and our 
+partners – to deliver unique and exciting content that we believe will capture 
+the imagination of gamers long into the future. </em> -->
+					<!-- </div> -->
+				</div><!-- end col -->
+				<div class="col-md-6 zero-padding"><img src="assets/img/main_about_rightimage.png"></div><!-- end col -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- instructor -->
+
+
+	<!-- GAMES
+	================================================== -->
+	<section id="games">
+		<div class=".container-fluid">
+			<div class="row">
+				<div class="col-md-6 zero-padding"><img src="assets/img/main_games_leftimage.png"></div>
+				<div class="col-md-6 zero-padding" style="background: url(assets/img/main_about_leftimage.png);">
+					<img src="assets/img/main_games_rightimage.png">
+				</div><!-- end col -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- instructor -->
+
 	<!-- JOBS
 	================================================== -->
 	<section id="jobs">
 		<div class=".container-fluid">
-			<div class="row">
-				<div class="col-lg-6">image TBD
+			<div class="row  bg-blue">
+				<div class="col-lg-6" >image TBD
 				</div><!-- end col -->			
-				<div class="col-lg-6">
+				<div class="col-lg-6 bg-white">
 					<h2>Jobs</h2> 
-					If you're as passionate about games as we are, and want to help rewrite the rulebook on game development and publishing, we should talk.
-
-					<div class="signup-link">
+					<p class="jobs-description">If you're as passionate about games as we are, and want to help rewrite the rulebook on game development and publishing, we should talk.</p>
+					
+					<ul class="jobs-list">
+						<li>
+							3D GENERALIST (M/F)
+							<button class="btn btn-default btn-round-xs btn-xs btn-apply bg-blue apply-now">Apply Now</button>
+						</li>
+						<li>
+							3D Animator (M/F)
+							<button class="btn btn-default btn-round-xs btn-xs btn-apply bg-blue apply-now">Apply Now</button>
+						</li>
+						<li>
+							Level Designer (M/F)
+							<button class="btn btn-default btn-round-xs btn-xs btn-apply bg-blue apply-now">Apply Now</button>
+						</li>
+						<li>
+							Lighting Artist (M/F)
+							<button class="btn btn-default btn-round-xs btn-xs btn-apply bg-blue apply-now">Apply Now</button>
+						</li>
+						<li>
+							SENIOR PROGRAMMER (M/F)
+							<button class="btn btn-default btn-round-xs btn-xs btn-apply bg-blue apply-now">Apply Now</button>
+						</li>
+						<li>
+							JUNIOR PROGRAMMER (M/F)
+							<button class="btn btn-default btn-round-xs btn-xs btn-apply bg-blue apply-now">Apply Now</button>
+						</li>
+						<li>
+							SENIOR 3D ARTIST (M/F)
+							<button class="btn btn-default btn-round-xs btn-xs btn-apply bg-blue apply-now">Apply Now</button>
+						</li>
+						<li>
+							User Acquisition Manager (M/F)
+							<button class="btn btn-default btn-round-xs btn-xs btn-apply bg-blue apply-now">Apply Now</button>
+						</li>
+						<li>
+							Community Manager (M/F)
+							<button class="btn btn-default btn-round-xs btn-xs btn-apply bg-blue apply-now">Apply Now</button>
+						</li>
+					</ul>
+					<div class="jobs-link">
 						<a href="">Find out why being part of the Playsnak family is cool >></a>
 					</div>
-					
 				</div><!-- end col -->
 
 			</div><!-- row -->
 		</div><!-- container -->
 		</div>		
 	</section><!-- instructor -->
+<style type="text/css">
 
+
+</style>
 	<!-- BLOG
 	================================================== -->
 	<section id="blog">
@@ -272,17 +391,17 @@
 						</div><!-- end col -->	
 					</div><!-- row -->
 					<div class="row">
-						<div class="col-sm-3">
-							<h3>K Cube Ventures</h3>
+						<div class="col-md-3">
+							<a href="http://www.kcubeventures.co.kr/" target="_blank"><img src="assets/img/kcube_logo.png" align="kCube"></a>
 						</div><!-- end col -->
-						<div class="col-sm-3">
-							<h3>+Tonic</h3>
+						<div class="col-md-3">
+							<a href="http://www.plustonic.com/" target="_blank"><img src="assets/img/tonic_logo.png" align="+tonic"></a>
 						</div><!-- end col -->			
-						<div class="col-sm-3">
-							<h3>enchant</h3>
+						<div class="col-md-3">
+							<a href="http://www.nchant.co.kr/" target="_blank"><img src="assets/img/nchant_logo.png" align="enchant"></a>
 						</div><!-- end col -->
-						<div class="col-sm-3">
-							<h3>Google</h3>
+						<div class="col-md-3">
+							<a href="https://www.google.com/intl/en/about/" target="_blank"><img src="assets/img/google_logo.png" align="google"></a>
 						</div><!-- end col -->
 					</div><!-- row -->
 				</div><!-- end col -->
