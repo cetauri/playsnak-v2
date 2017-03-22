@@ -705,3 +705,48 @@ footer a:hover {
 #contact {
 	 background-color: white;
 }
+#logo {
+	width: 106.5px;
+	height: 24px;
+}
+.navbar-nav > .active > a > div {
+    color: #0092d0;
+	padding-bottom: 1px;
+    border-bottom: 2px solid #0092d0;
+}
+
+.navbar-inverse { 
+	background-color: rgba(0,0,0,1);
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 100%;
+  margin: auto;
+}
+
+.carousel-indicators li{
+    border: 1.5px solid #0092d0;
+}
+.carousel-indicators .active {
+    background-color: #0092d0;
+}
+
+.btn-round-lg{
+	border-radius: 22.5px;
+}
+.btn-round{
+	border-radius: 17px;
+}
+.btn-round-sm{
+	border-radius: 15px;
+}
+.btn-round-xs{
+	border-radius: 11px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.blue-border-color{
+	color: #0092d0;
+	background-color: rgba(0,0,0,0);
+    border: 1.5px solid #0092d0;
+}
