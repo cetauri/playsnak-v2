@@ -189,7 +189,18 @@ the imagination of gamers long into the future. </em> -->
 	<section id="jobs">
 		<div class=".container-fluid">
 			<div class="row  bg-blue">
-				<div class="col-lg-6" >image TBD
+				<div class="col-lg-6" >
+					<div class="row">
+						<div class="col-sm-6">
+							We are a team of videogame
+							enthusiasts on a mission to 
+							create high-quality VR games 
+							and nurture amazing products
+							from our development partners.
+						</div><!-- end col -->
+						
+					</div><!-- row -->				
+					
 				</div><!-- end col -->			
 				<div class="col-lg-6 bg-white">
 					<h2><bdi class="black-underline-title">Jobs</bdi></h2>
@@ -256,31 +267,40 @@ the imagination of gamers long into the future. </em> -->
 					</div><!-- row -->
 					<div class="row">
 						<div class="col-sm-3">
-							1
+							<img src="assets/img/blog_smallimage01.png">
 						</div><!-- end col -->
 						<div class="col-sm-3">
-							2
+							<img src="assets/img/blog_smallimage02.png">
 						</div><!-- end col -->			
 						<div class="col-sm-3">
-							3
+							<img src="assets/img/blog_smallimage03.png">
 						</div><!-- end col -->
 						<div class="col-sm-3">
-							4
+							<img src="assets/img/blog_smallimage04.png">
 						</div><!-- end col -->
 					</div><!-- row -->
 					<div class="row">
 						<div class="col-sm-3">
-							1
+							<img src="assets/img/blog_smallimage05.png">
 						</div><!-- end col -->
 						<div class="col-sm-3">
-							2
+							<img src="assets/img/blog_smallimage06.png">
 						</div><!-- end col -->			
 						<div class="col-sm-3">
-							3
+							<img src="assets/img/blog_smallimage07.png">
 						</div><!-- end col -->
 						<div class="col-sm-3">
-							4
+							<img src="assets/img/blog_smallimage08.png">
 						</div><!-- end col -->
+					</div><!-- row -->
+					<div class="row">
+						<div class="col-sm-3">
+							<img src="assets/img/blog_smallimage09.png">
+						</div><!-- end col -->
+						<div class="col-sm-3">
+							<img src="assets/img/blog_smallimage10.png">
+						</div><!-- end col -->			
+						
 					</div><!-- row -->
 				</div>
 			</div>
@@ -288,9 +308,11 @@ the imagination of gamers long into the future. </em> -->
 	</section>
 
 <style type="text/css">
-.news-letter-desc {
+.newsletter-desc {
 	font-family: 'Rajdhani';
 	font-size: 14.5px;	
+	padding-top: 10px;
+	padding-bottom: 10px;
 }	
 
 #contact-div{
@@ -315,20 +337,26 @@ the imagination of gamers long into the future. </em> -->
 						<div class="col-lg-8">
 							<h2><bdi class="blue-underline-title blue-text">Newsletter</bdi></h2>
 						</div><!-- end col -->	
-					</div><!-- row -->
-					<div class="row">
-						<div class="col-lg-6 news-letter-desc blue-text">
+					
+						<div class="col-lg-6 newsletter-desc blue-text">
 							Sign up with your email address to receive news and updates.
 						</div><!-- end col -->
-						<div class="col-lg-6">
-							<form class="form-inline">
-	  							<div class="form-group pull-right" style="background-color: yellow">
-    								<label class="sr-only" for="subscribeInputEmail">Email address</label>
-    								<input type="email" class="form-control" id="subscribeInputEmail" placeholder="Email address">
-									<button type="button" class="btn btn-primary">Subscribe now!</button>
-								</div>
-							</form>
-						</div><!-- end col -->			
+						
+    								<form id="myform">
+							<!-- <form class="form-inline"> -->
+	  							<!-- <div class="form-group"> -->
+	  								<div class="col-lg-3">
+	    								<label class="sr-only" for="subscribeInputEmail">Email address</label>
+	    								<input type="email" class="form-control" id="subscribeInputEmail" placeholder="Email address">
+    								</div>
+
+    								<div class="col-lg-3">
+										<button type="button" class="btn btn-primary btn-block" id="btnSubscribe">Subscribe now!</button>
+									</div>
+									</form>
+								<!-- </div> -->
+
+						<!-- </div>end col			 -->
 						
 					</div><!-- row -->
 				</div><!-- end col -->
@@ -423,8 +451,12 @@ the imagination of gamers long into the future. </em> -->
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="assets/js/jquery-2.1.1.min.js"></script>
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="assets/js/jquery-2.1.1.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/additional-methods.min.js"></script>
+
     <script src="assets/js/bootstrap.min.js"></script>
     
     <script src="assets/js/main.js"></script>
@@ -434,6 +466,31 @@ the imagination of gamers long into the future. </em> -->
 
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbWn70yk2gZLyTcX3Ahfxnd2JkCDKYekA&callback=myMap"></script>
 	<script type="text/javascript">
+		var form = $( "#myform" );
+
+	    $( document ).ready(function() {
+			form.validate();
+	        console.log( "document loaded" );
+	    });
+
+		$( "#btnSubscribe" ).click(function() {
+			$( "#btnSubscribe" ).blur();
+
+			// https://jqueryvalidation.org/
+			if (!form.valid()){
+				return;
+			}
+			
+			var email = $("#subscribeInputEmail");
+			if(email.val() == ""){
+				email.focus();
+				alert("Please enter a valid email address.");
+				return;
+			}
+
+			alert(":) valid email : " + email.val());
+		});
+
 		function myMap() {
 
 		  var playsnak_positon = {lat: 52.512930, lng: 13.316290};
@@ -463,7 +520,6 @@ the imagination of gamers long into the future. </em> -->
 		  // });
 
 		  infowindow.open(map,marker);
-
 		}
 	</script>
 
@@ -537,6 +593,5 @@ the imagination of gamers long into the future. </em> -->
 	    </div>
 	  </div>
 	</div>
-
 </body>
 </html>
