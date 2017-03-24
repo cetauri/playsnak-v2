@@ -96,8 +96,6 @@ h2 > bdi.white-underline-title{
 		    <ol class="carousel-indicators">
 		      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 		      <li data-target="#myCarousel" data-slide-to="1"></li>
-		      <li data-target="#myCarousel" data-slide-to="2"></li>
-		      <li data-target="#myCarousel" data-slide-to="3"></li>
 		    </ol>
 
 		    <!-- Wrapper for slides -->
@@ -121,14 +119,6 @@ h2 > bdi.white-underline-title{
 			    	<p>Beatiful flowers in Kolymbari, Crete.</p>
 			    </div>		        
 		      </div>
-
-		      <div class="item">
-		        <img src="assets/img/htm_20160609142536471503.jpg">
-		      </div>
-		    
-		      <div class="item">
-		        <img src="assets/img/htm_2016060914253647150.jpg" >
-		      </div>
 		    </div>
 
 		    <!-- Left and right controls -->
@@ -146,26 +136,34 @@ h2 > bdi.white-underline-title{
 
 	<!-- ABOUT US
 	================================================== -->
-	<section id="aboutus">
+
+
+	<section id="aboutus" class="aboutus-half-background">
 		<div class=".container-fluid">
-			<div class="row"><!-- 
+			<div class="row">
+				<div class="col-lg-6" id="aboutus-div">
+					<h2><bdi class="blue-underline-title blue-text">About us</bdi></h2> 
+					<div id="aboutus-desc">
+						<div>Playsnak is a start-up company focused on mobile games publishing and 
+						Virtual Reality development. </div>
+							<div>Today, as mobile gaming matures and immersive VR experiences gain traction, </div>
+							<div>our goal is to merge these mediums by creating games that combine the accessibility </div>
+							<div>of mobile play with the stunning possibilities of ever-evolving VR technologies. </div>
+							<div>Skillfully adding VR components to already-amazing games enables us – and our </div>
+							<div>partners – to deliver unique and exciting content that we believe will capture </div>
+							<div>the imagination of gamers long into the future. </div>
+							<div class="jobs-link">
+							<a href="">Read more ></a>
+						</div>
+					</div>
+					
+				</div><!-- end col -->
+				
+			<!-- 
 			<div style="background-image: url(assets/img/main_about_leftimage.png); height: 200px; width: 400px; border: 1px solid black;">Example of a DIV element with a background image:</div> -->
 
-				<div class="col-md-6 zero-padding" style="background: url(assets/img/main_about_leftimage.png);">
-					<img src="assets/img/main_about_leftimage.png">
-					<!-- <div class="float-div"> -->
-<!-- 						<h2>About us</h2>
-						<em>Playsnak is a start-up company focused on mobile games publishing and 
-Virtual Reality development. 
-Today, as mobile gaming matures and immersive VR experiences gain traction, 
-our goal is to merge these mediums by creating games that combine the accessibility 
-of mobile play with the stunning possibilities of ever-evolving VR technologies. 
-Skillfully adding VR components to already-amazing games enables us – and our 
-partners – to deliver unique and exciting content that we believe will capture 
-the imagination of gamers long into the future. </em> -->
-					<!-- </div> -->
-				</div><!-- end col -->
-				<div class="col-md-6 zero-padding"><img src="assets/img/main_about_rightimage.png"></div><!-- end col -->
+				<div class="col-md-6 zero-padding"><img src="assets/img/main_about_rightimage.png"></div>
+				<!-- end col -->
 			</div><!-- row -->
 		</div><!-- container -->
 	</section><!-- instructor -->
@@ -186,23 +184,193 @@ the imagination of gamers long into the future. </em> -->
 
 	<!-- JOBS
 	================================================== -->
-	<section id="jobs">
-		<div class=".container-fluid">
-			<div class="row  bg-blue">
-				<div class="col-lg-6" >
+<style>
+.half-blue-background{
+  background: linear-gradient(to right, #0092d0 0%, #0092d0 50%, white 50%, white 100%);
+}
+
+.aboutus-half-background{
+	background-image: url(assets/img/main_about_leftimage.png), linear-gradient(#0092d0, white); /* W3C */
+	background-repeat: no-repeat;
+	background-size: 50% 100%;
+
+
+  /*background: linear-gradient(to right, #0092d0 0%, #0092d0 50%, white 50%, white 100%);*/
+}
+
+mark{
+	background-color: #0092d0;
+}
+
+.jobs-title {
+	width: 404.5px;
+	height: 236.5px;
+	font-family: Teko;
+	font-size: 15.7px;
+	font-weight: 300;
+	line-height: 3.83;
+}
+
+.jobs-title .text-style-1 {
+	font-size: 34.6px;
+	line-height: 1.36;
+	color: #92dffd;
+}
+
+.jobs-title .text-style-2 {
+	font-size: 31.3px;
+	line-height: 1.5;
+	color: #ffffff;
+}
+
+.jobs-title .text-style-3 {
+	font-size: 58.8px;
+	line-height: 0.8;
+	color: #ffffff;
+}
+
+.jobs-title .text-style-4 {
+	font-size: 45.7px;
+	line-height: 1.03;
+	color: #ffffff;
+}
+
+.jobs-title .text-style-5 {
+	font-size: 35.3px;
+	line-height: 1.33;
+	color: #0092d0;
+	background-color: white;
+}
+
+.jobs-title .text-style-6 {
+	font-size: 71.8px;
+	line-height: 0.84;
+	color: #0092d0;
+}
+
+.jobs-title .text-style-7 {
+	font-size: 31.3px;
+	line-height: 1.92;
+	color: #ffffff;
+}
+
+.jobs-title .text-style-8 {
+	font-size: 65.3px;
+	line-height: 0.89;
+	color: #ffffff;
+}
+
+.jobs-title .text-style-9 {
+	font-size: 45.7px;
+	line-height: 1.27;
+	color: #ffffff;
+}
+
+.jobs-title .text-style-10 {
+	font-size: 19.6px;
+	line-height: 2.97;
+	color: #92dffd;
+}
+
+.jobs-title .text-style-11 {
+	font-size: 31.3px;
+	line-height: 1.85;
+	color: #ffffff;
+}
+
+.jobs-title .text-style-12 {
+	font-size: 65.3px;
+	line-height: 0.89;
+	color: #0092d0;
+}
+
+.jobs-title .text-style-13 {
+	font-size: 35.9px;
+	line-height: 1.62;
+	color: #ffffff;
+}
+
+.jobs-title .text-style-14 {
+	font-size: 19.6px;
+	line-height: 2.4;
+	color: #92dffd;
+}
+
+.jobs-title .text-style-15 {
+	font-size: 19.6px;
+	line-height: 2.4;
+	color: #ffffff;
+}
+
+.jobs-title .text-style-16 {
+	font-size: 47.7px;
+	line-height: 0.99;
+	color: #0092d0;
+}
+
+.jobs-title .text-style-17 {
+	font-size: 47.7px;
+	line-height: 0.99;
+	color: #ffffff;
+}
+
+.jobs-title .text-style-18 {
+	font-size: 22.9px;
+	line-height: 2.06;
+	color: #ffffff;
+}
+
+.jobs-title .text-style-19 {
+	font-size: 19.6px;
+	line-height: 2.0;
+	color: #92dffd;
+}
+
+.jobs-title .text-style-20 {
+	font-size: 31.3px;
+	line-height: 1.25;
+	color: #ffffff;
+}
+
+.jobs-title .text-style-21 {
+	font-size: 43.7px;
+	line-height: 0.9;
+	color: #ffffff;
+}
+
+.jobs-empty-height{
+	height: 33px;
+}
+</style>
+
+
+	<section id="jobs" class="half-blue-background">
+		<div class="container ">
+			<div class="row ">
+				<div class="col-lg-6 " >
 					<div class="row">
-						<div class="col-sm-6">
-							We are a team of videogame
-							enthusiasts on a mission to 
-							create high-quality VR games 
-							and nurture amazing products
-							from our development partners.
+						<div class="jobs-title">
+							<mark class="text-style-1">We are </mark> 
+							<mark class="text-style-3">A TEAM </mark> 
+							<mark class="text-style-5">of videogame</mark>
+							<mark class="text-style-7">ENTHUSIASTS </mark>
+							<mark class="text-style-9">on a mission to </mark>
+							<mark class="text-style-11">CREATE </mark>
+							<mark class="text-style-13">high-quality </mark>
+							<mark class="text-style-15">VR</mark>
+							<mark class="text-style-17"> GAMES </mark>
+							<mark class="text-style-19">and </mark>
+							<mark class="text-style-21">NURTURE AMAZING </mark>
+							<mark class="text-style-23">PRODUCTS</mark>
+							<mark class="text-style-25">from</mark>
+							<mark class="text-style-27"> OUR DEVELOPMENT </mark>
+							<mark class="text-style-29"> PARTNERS.</mark>
 						</div><!-- end col -->
 						
 					</div><!-- row -->				
 					
 				</div><!-- end col -->			
-				<div class="col-lg-6 bg-white">
+				<div class="col-lg-6 bg-white ">
 					<h2><bdi class="black-underline-title">Jobs</bdi></h2>
 					<p class="jobs-description">If you're as passionate about games as we are, and want to help rewrite the rulebook on game development and publishing, we should talk.</p>
 					
@@ -245,7 +413,7 @@ the imagination of gamers long into the future. </em> -->
 						</li>
 					</ul>
 					<div class="jobs-link">
-						<a href="">Find out why being part of the Playsnak family is cool >></a>
+						<a href="">Find out why being part of the Playsnak family is cool ></a>
 					</div>
 				</div><!-- end col -->
 

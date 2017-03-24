@@ -326,7 +326,10 @@ section.main-content {
 	text-align: center;
 	color: white;
 }
-
+#jobs{
+	/*background-color: #0092d0;*/
+	/*color: white;	*/
+}
 #parteners {
 	background-color: #3e4249;
 	color: white;
@@ -740,10 +743,10 @@ footer a:hover {
 }
 .apply-now {
 	font-family: Calibri;
-	font-size: 9.5px;
+	font-size: 10px;
 	font-weight: 300;
-
-	line-height: 1.21;
+	color: white;
+	/*line-height: 1.21;*/
 }
 
 #parteners{
@@ -760,4 +763,36 @@ footer a:hover {
 
 label#subscribeInputEmail-error.error{
 	color: white;
+}
+
+#games, #aboutus, #carousel{
+	padding: 0px;
+}
+
+#aboutus-div > h2 {
+	padding-top: 50px;
+	padding-left: 20%;
+}
+
+#aboutus-desc  {
+	width: 412px;
+	height: 149px;
+	font-family: Teko;
+	font-size: 18px;
+	line-height: 1.29;
+	letter-spacing: -0.4px;
+	color: white;
+	padding-left: 20%;
+}
+
+.carousel-indicators li {
+	width: 23px;
+	height: 23px;
+	border-radius: 23px;
+}
+.carousel-indicators .active{
+	width: 23px;
+	height: 23px;
+		/*border: solid 1.5px #0b6b98;*/
+
 }
