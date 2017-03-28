@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta charset="utf-8">
-	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="">
 	<meta name="author" content="">
@@ -18,75 +16,87 @@
 	<!-- Font Awesome Icons -->
 	<link href="assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
-	<link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
 
 	<!-- Custom CSS -->
-	<link href="assets/css/custom.css" rel="stylesheet">
-	
+	<link href="assets/css/playsnak.css" type="text/css" rel="stylesheet">
+  	<link rel="stylesheet" type="text/css" href="assets/css/segment.css" />
+
+
 	<!-- Google Fonts -->
-	<link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+<!-- 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+ -->
+	<link href="https://fonts.googleapis.com/css?family=Teko:400,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
 	
 	<!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
-
 </head>
-<style type="text/css">
-h2 > bdi {
-	font-family: Teko;
-	font-size: 25px;
-	font-weight: 600;
-	padding-bottom: 5px;
-    border-bottom: 1px solid #0092d0;
-}
-h2 > bdi.black-underline-title{
-    border-bottom: 1px solid gray;
-}
-
-h2 > bdi.white-underline-title{
-    border-bottom: 1px solid white;
-}
-.mailLink{
-	text-decoration: underline;
-}
-</style>
 <body>
 	
 	<!-- HEADER
 	================================================== -->
-	<header class="site-header" role="banner">
+	<header class="site-header" role="banner" id="header">
 		<!-- NAVBAR
 		================================================== -->
 		<div class="navbar-wrapper">
 			<div class="navbar navbar-inverse navbar-fixed-top " role="navigation">
 				<div class="container">
 					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand" href="/"><img src="assets/img/logo.png" alt="Playsnak" id="logo"></a>
+						<div class="pull-right">
+							<!-- <select class="segment-select" id="multi-language-mini" style="display: none;visibility: 'hidden';">
+							    <option value="1">en</option>
+							    <option value="0">kr</option>
+							</select> -->
+							&nbsp;&nbsp;
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="Playsnak" id="logo"></a>
 					</div>
 					<div class="navbar-collapse collapse">
 						<ul class="nav navbar-nav navbar-right">
-							<li class="active"><a href="/"><div>about us</div></a></li>
-							<li><a href="blog.html">game</a></li>
-							<li><a href="resources.html">jobs</a></li>
-							<li><a href="contact.html">our parteners</a></li>
-							<li><a href="contact.html">blog</a></li>
-							<li><a href="contact.html">contact</a></li>
+							<li><a href="#aboutus"><div>about us</div></a></li>
+							<li><a href="#games"><div>game</div></a></li>
+							<li><a href="#jobs"><div>jobs</div></a></li>
+							<li><a href="#parteners"><div>our parteners</div></a></li>
+							<li><a href="#blog"><div>blog</div></a></li>
+							<li><a href="#contact"><div>contact</div></a></li>
+							<li id="multi-language">
+								<select class="segment-select">
+								    <option value="1">en</option>
+								    <option value="0">kr</option>
+								</select>
+							</li>
 						</ul>
 					</div>
-				</div>
+        		</div>
 			</div>
 		</div>
 	</header>
-	
+<style type="text/css">
+/*#multi-language-mini{
+	display: none;
+	visibility: hidden;
+}*/
+#multi-language{
+	/*background-color: red;*/
+	/*font-family: 'Teko-Semibold';*/
+
+	padding-top: 13px;
+	font-family: Teko;
+
+	/*font-weight: 600;*/
+	/*letter-spacing: -0.3px;*/
+	/*text-align: right;	*/
+}
+</style>	
 	<!-- CAROUSEL
 	================================================== -->
 	<section id="carousel">
@@ -94,7 +104,7 @@ h2 > bdi.white-underline-title{
 		  <div id="myCarousel" class="carousel slide" data-ride="carousel">
 		    <!-- Indicators -->
 		    <ol class="carousel-indicators">
-		      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		      <li data-target="#myCarousel" data-slide-to="0"></li>
 		      <li data-target="#myCarousel" data-slide-to="1"></li>
 		    </ol>
 
@@ -132,41 +142,35 @@ h2 > bdi.white-underline-title{
 		    </a>
 		  </div>
 		</div>	
-	</section>
+	</section><!-- carousel -->
 
 	<!-- ABOUT US
 	================================================== -->
 
-
 	<section id="aboutus" class="aboutus-half-background">
 		<div class=".container-fluid">
 			<div class="row">
-				<div class="col-lg-6" id="aboutus-div">
-					<h2><bdi class="blue-underline-title blue-text">About us</bdi></h2> 
-					<div id="aboutus-desc">
-						<div>Playsnak is a start-up company focused on mobile games publishing and 
-						Virtual Reality development. </div>
-							<div>Today, as mobile gaming matures and immersive VR experiences gain traction, </div>
-							<div>our goal is to merge these mediums by creating games that combine the accessibility </div>
-							<div>of mobile play with the stunning possibilities of ever-evolving VR technologies. </div>
-							<div>Skillfully adding VR components to already-amazing games enables us – and our </div>
-							<div>partners – to deliver unique and exciting content that we believe will capture </div>
-							<div>the imagination of gamers long into the future. </div>
-							<div class="jobs-link">
+				<div class="col-md-6 zero-padding">
+					<img src="assets/img/main_about_leftimage.png">
+					<div class="caption about-description">
+		            	<h2><bdi class="blue-underline-title blue-text">About us</bdi></h2> 
+						<div>Playsnak is a start-up company focused on mobile games publishing and Virtual Reality development. </div>
+						<div>Today, as mobile gaming matures and immersive VR experiences gain traction, </div>
+						<div>our goal is to merge these mediums by creating games that combine the accessibility </div>
+						<div>of mobile play with the stunning possibilities of ever-evolving VR technologies. </div>
+						<div>Skillfully adding VR components to already-amazing games enables us – and our </div>
+						<div>partners – to deliver unique and exciting content that we believe will capture </div>
+						<div>the imagination of gamers long into the future. </div>
+						<div class="jobs-link">
 							<a href="">Read more ></a>
 						</div>
-					</div>
-					
-				</div><!-- end col -->
-				
-			<!-- 
-			<div style="background-image: url(assets/img/main_about_leftimage.png); height: 200px; width: 400px; border: 1px solid black;">Example of a DIV element with a background image:</div> -->
-
+		            </div>
+				</div>
 				<div class="col-md-6 zero-padding"><img src="assets/img/main_about_rightimage.png"></div>
 				<!-- end col -->
 			</div><!-- row -->
 		</div><!-- container -->
-	</section><!-- instructor -->
+	</section><!-- aboutus -->
 
 
 	<!-- GAMES
@@ -177,239 +181,76 @@ h2 > bdi.white-underline-title{
 				<div class="col-md-6 zero-padding"><img src="assets/img/main_games_leftimage.png"></div>
 				<div class="col-md-6 zero-padding" style="background: url(assets/img/main_about_leftimage.png);">
 					<img src="assets/img/main_games_rightimage.png">
+					<div class="caption games-description">
+		            	<h2><bdi class="blue-underline-title blue-text">Games</bdi></h2> 
+						<div>As our name suggests, games are the heart and soul of everything we do. </div>
+						<div>Very soon, we’ll be announcing the first game in our publishing portfolio, as well as more details about our own development <div>projects. </div>
+						<div>For us, the combination of mobile gaming and VR represents an area of huge potential growth for the games industry. </div>
+						<div>To make sure we’re primed for the future, we’ve assembled a team of world-class talent that has operated on the front line of both sectors and already has experience of leading game-changing developments in both the mobile and VR markets.						</div>
+						<div class="jobs-link">
+						<a href="">Read more ></a>
+						</div>
+		            </div>
 				</div><!-- end col -->
 			</div><!-- row -->
 		</div><!-- container -->
-	</section><!-- instructor -->
+	</section><!-- games -->
 
 	<!-- JOBS
 	================================================== -->
-<style>
-.half-blue-background{
-  background: linear-gradient(to right, #0092d0 0%, #0092d0 50%, white 50%, white 100%);
-}
-
-.aboutus-half-background{
-	background-image: url(assets/img/main_about_leftimage.png), linear-gradient(#0092d0, white); /* W3C */
-	background-repeat: no-repeat;
-	background-size: 50% 100%;
-
-
-  /*background: linear-gradient(to right, #0092d0 0%, #0092d0 50%, white 50%, white 100%);*/
-}
-
-mark{
-	background-color: #0092d0;
-}
-
-.jobs-title {
-	width: 404.5px;
-	height: 236.5px;
-	font-family: Teko;
-	font-size: 15.7px;
-	font-weight: 300;
-	line-height: 3.83;
-}
-
-.jobs-title .text-style-1 {
-	font-size: 34.6px;
-	line-height: 1.36;
-	color: #92dffd;
-}
-
-.jobs-title .text-style-2 {
-	font-size: 31.3px;
-	line-height: 1.5;
-	color: #ffffff;
-}
-
-.jobs-title .text-style-3 {
-	font-size: 58.8px;
-	line-height: 0.8;
-	color: #ffffff;
-}
-
-.jobs-title .text-style-4 {
-	font-size: 45.7px;
-	line-height: 1.03;
-	color: #ffffff;
-}
-
-.jobs-title .text-style-5 {
-	font-size: 35.3px;
-	line-height: 1.33;
-	color: #0092d0;
-	background-color: white;
-}
-
-.jobs-title .text-style-6 {
-	font-size: 71.8px;
-	line-height: 0.84;
-	color: #0092d0;
-}
-
-.jobs-title .text-style-7 {
-	font-size: 31.3px;
-	line-height: 1.92;
-	color: #ffffff;
-}
-
-.jobs-title .text-style-8 {
-	font-size: 65.3px;
-	line-height: 0.89;
-	color: #ffffff;
-}
-
-.jobs-title .text-style-9 {
-	font-size: 45.7px;
-	line-height: 1.27;
-	color: #ffffff;
-}
-
-.jobs-title .text-style-10 {
-	font-size: 19.6px;
-	line-height: 2.97;
-	color: #92dffd;
-}
-
-.jobs-title .text-style-11 {
-	font-size: 31.3px;
-	line-height: 1.85;
-	color: #ffffff;
-}
-
-.jobs-title .text-style-12 {
-	font-size: 65.3px;
-	line-height: 0.89;
-	color: #0092d0;
-}
-
-.jobs-title .text-style-13 {
-	font-size: 35.9px;
-	line-height: 1.62;
-	color: #ffffff;
-}
-
-.jobs-title .text-style-14 {
-	font-size: 19.6px;
-	line-height: 2.4;
-	color: #92dffd;
-}
-
-.jobs-title .text-style-15 {
-	font-size: 19.6px;
-	line-height: 2.4;
-	color: #ffffff;
-}
-
-.jobs-title .text-style-16 {
-	font-size: 47.7px;
-	line-height: 0.99;
-	color: #0092d0;
-}
-
-.jobs-title .text-style-17 {
-	font-size: 47.7px;
-	line-height: 0.99;
-	color: #ffffff;
-}
-
-.jobs-title .text-style-18 {
-	font-size: 22.9px;
-	line-height: 2.06;
-	color: #ffffff;
-}
-
-.jobs-title .text-style-19 {
-	font-size: 19.6px;
-	line-height: 2.0;
-	color: #92dffd;
-}
-
-.jobs-title .text-style-20 {
-	font-size: 31.3px;
-	line-height: 1.25;
-	color: #ffffff;
-}
-
-.jobs-title .text-style-21 {
-	font-size: 43.7px;
-	line-height: 0.9;
-	color: #ffffff;
-}
-
-.jobs-empty-height{
-	height: 33px;
-}
-</style>
-
 
 	<section id="jobs" class="half-blue-background">
 		<div class="container ">
 			<div class="row ">
-				<div class="col-lg-6 " >
+				<div class="col-lg-6">
 					<div class="row">
 						<div class="jobs-title">
-							<mark class="text-style-1">We are </mark> 
-							<mark class="text-style-3">A TEAM </mark> 
-							<mark class="text-style-5">of videogame</mark>
-							<mark class="text-style-7">ENTHUSIASTS </mark>
-							<mark class="text-style-9">on a mission to </mark>
-							<mark class="text-style-11">CREATE </mark>
-							<mark class="text-style-13">high-quality </mark>
-							<mark class="text-style-15">VR</mark>
-							<mark class="text-style-17"> GAMES </mark>
-							<mark class="text-style-19">and </mark>
-							<mark class="text-style-21">NURTURE AMAZING </mark>
-							<mark class="text-style-23">PRODUCTS</mark>
-							<mark class="text-style-25">from</mark>
-							<mark class="text-style-27"> OUR DEVELOPMENT </mark>
-							<mark class="text-style-29"> PARTNERS.</mark>
+				
 						</div><!-- end col -->
 						
 					</div><!-- row -->				
 					
 				</div><!-- end col -->			
-				<div class="col-lg-6 bg-white ">
+				<div class="col-lg-6 bg-white">
 					<h2><bdi class="black-underline-title">Jobs</bdi></h2>
 					<p class="jobs-description">If you're as passionate about games as we are, and want to help rewrite the rulebook on game development and publishing, we should talk.</p>
 					
 					<ul class="jobs-list">
 						<li>
 							3D GENERALIST (M/F)
-							<button class="btn btn-default btn-round-xs btn-xs btn-apply bg-blue apply-now">Apply Now</button>
+							<button class="btn btn-default btn-round-xs btn-xs bg-blue apply-now">Apply Now</button>
 						</li>
 						<li>
 							3D Animator (M/F)
-							<button class="btn btn-default btn-round-xs btn-xs btn-apply bg-blue apply-now">Apply Now</button>
+							<button class="btn btn-default btn-round-xs btn-xs bg-blue apply-now">Apply Now</button>
 						</li>
 						<li>
 							Level Designer (M/F)
-							<button class="btn btn-default btn-round-xs btn-xs btn-apply bg-blue apply-now">Apply Now</button>
+							<button class="btn btn-default btn-round-xs btn-xs bg-blue apply-now">Apply Now</button>
 						</li>
 						<li>
 							Lighting Artist (M/F)
-							<button class="btn btn-default btn-round-xs btn-xs btn-apply bg-blue apply-now">Apply Now</button>
+							<button class="btn btn-default btn-round-xs btn-xs bg-blue apply-now">Apply Now</button>
 						</li>
 						<li>
 							SENIOR PROGRAMMER (M/F)
-							<button class="btn btn-default btn-round-xs btn-xs btn-apply bg-blue apply-now">Apply Now</button>
+							<button class="btn btn-default btn-round-xs btn-xs bg-blue apply-now">Apply Now</button>
 						</li>
 						<li>
 							JUNIOR PROGRAMMER (M/F)
-							<button class="btn btn-default btn-round-xs btn-xs btn-apply bg-blue apply-now">Apply Now</button>
+							<button class="btn btn-default btn-round-xs btn-xs bg-blue apply-now">Apply Now</button>
 						</li>
 						<li>
 							SENIOR 3D ARTIST (M/F)
-							<button class="btn btn-default btn-round-xs btn-xs btn-apply bg-blue apply-now">Apply Now</button>
+							<button class="btn btn-default btn-round-xs btn-xs bg-blue apply-now">Apply Now</button>
 						</li>
 						<li>
 							User Acquisition Manager (M/F)
-							<button class="btn btn-default btn-round-xs btn-xs btn-apply bg-blue apply-now">Apply Now</button>
+							<button class="btn btn-default btn-round-xs btn-xs bg-blue apply-now">Apply Now</button>
 						</li>
 						<li>
 							Community Manager (M/F)
-							<button class="btn btn-default btn-round-xs btn-xs btn-apply bg-blue apply-now">Apply Now</button>
+							<button class="btn btn-default btn-round-xs btn-xs bg-blue apply-now">Apply Now</button>
 						</li>
 					</ul>
 					<div class="jobs-link">
@@ -420,7 +261,7 @@ mark{
 			</div><!-- row -->
 		</div><!-- container -->
 		</div>		
-	</section><!-- instructor -->
+	</section><!-- jobs -->
 
 	<!-- BLOG
 	================================================== -->
@@ -473,28 +314,8 @@ mark{
 				</div>
 			</div>
 		</div>
-	</section>
+	</section><!-- blog -->
 
-<style type="text/css">
-.newsletter-desc {
-	font-family: 'Rajdhani';
-	font-size: 14.5px;	
-	padding-top: 10px;
-	padding-bottom: 10px;
-}	
-
-#contact-div{
-	font-family: 'Rajdhani-Medium';
-	font-size: 12px;
-}
-
-#contact-div > small{
-	color: #959595;
-}
-/*.subscribe-now{
-	width: 200px;
-}*/
-</style>
 	<!-- NEW LETTER
 	================================================== -->
 	<section id="newsletter">
@@ -502,35 +323,26 @@ mark{
 			<div class="row">
 				<div class="col-md-12">
 					<div class="row">
-						<div class="col-lg-8">
+						<div class="col-lg-12">
 							<h2><bdi class="blue-underline-title blue-text">Newsletter</bdi></h2>
 						</div><!-- end col -->	
-					
-						<div class="col-lg-6 newsletter-desc blue-text">
+						<div class="col-lg-6 col-md-6 newsletter-desc blue-text">
 							Sign up with your email address to receive news and updates.
 						</div><!-- end col -->
-						
-    								<form id="myform">
-							<!-- <form class="form-inline"> -->
-	  							<!-- <div class="form-group"> -->
-	  								<div class="col-lg-3">
-	    								<label class="sr-only" for="subscribeInputEmail">Email address</label>
-	    								<input type="email" class="form-control" id="subscribeInputEmail" placeholder="Email address">
-    								</div>
-
-    								<div class="col-lg-3">
-										<button type="button" class="btn btn-primary btn-block" id="btnSubscribe">Subscribe now!</button>
-									</div>
-									</form>
-								<!-- </div> -->
-
-						<!-- </div>end col			 -->
-						
+						<form id="myform">
+							<div class="col-lg-3 col-md-3 col-sx-12">
+								<label class="sr-only" for="subscribeInputEmail">Email address</label>
+								<input type="email" class="form-control" id="subscribeInputEmail" placeholder="Email address">
+							</div>
+							<div class="col-lg-3 col-md-3 col-sx-12">
+								<button type="button" class="btn btn-primary btn-block" id="btnSubscribe">Subscribe now!</button>
+							</div>
+						</form>
 					</div><!-- row -->
 				</div><!-- end col -->
 			</div><!-- row -->
 		</div><!-- container -->
-	</section><!-- instructor -->
+	</section><!-- newsletter -->
 
 	<!-- PARTNER
 	================================================== -->
@@ -543,38 +355,40 @@ mark{
 							<h2><bdi class="white-underline-title">Our Parteners</bdi></h2>
 						</div><!-- end col -->	
 					</div><!-- row -->
-					<div class="row">
-						<div class="col-md-3">
+					<div class="row" id="partners-list">
+						<div class="col-lg-3 col-md-6 col-xs-12">
 							<a href="http://www.kcubeventures.co.kr/en/" target="_blank"><img src="assets/img/kcube_logo.png" align="kCube"></a>
 						</div><!-- end col -->
-						<div class="col-md-3">
+						<div class="col-lg-3 col-md-6 col-xs-12">
 							<a href="http://www.plustonic.com/" target="_blank"><img src="assets/img/tonic_logo.png" align="+tonic"></a>
 						</div><!-- end col -->			
-						<div class="col-md-3">
+						<div class="col-lg-3 col-md-6 col-xs-12">
 							<a href="http://www.nchant.co.kr/" target="_blank"><img src="assets/img/nchant_logo.png" align="enchant"></a>
 						</div><!-- end col -->
-						<div class="col-md-3">
+						<div class="col-lg-3 col-md-6 col-xs-12">
 							<a href="https://www.google.com/intl/en/about/" target="_blank"><img src="assets/img/google_logo.png" align="google"></a>
 						</div><!-- end col -->
 					</div><!-- row -->
 				</div><!-- end col -->
 			</div><!-- row -->
 		</div><!-- container -->
-	</section><!-- instructor -->
+	</section><!-- parteners -->
 
 	<!-- CONTACT
 	================================================== -->	
 	<section id="contact">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6" id="contact-div">
+				<div class="col-lg-12 col-md-12 col-xs-12">
 					<h2><bdi class="black-underline-title">Contact</bdi></h2> 
+				</div><!-- end col -->			
+				<div class="col-lg-6 col-md-6 col-xs-12" id="contact-div">
 					<stong>Playsnak GmbH</stong> <br/>
-					<small>Bismarckstr. 10, 10625 Berlin</small><br/>
+					<small>Bismarckstr. 10, 10625 Berlin, Germany</small><br/>
 					<a href="mailto:contact@playsnak.com" class="mailLink">contact@playsnak.com</a>
 				</div><!-- end col -->
-				<div class="col-lg-6">
-					<div class="pull-right" id="social-div">
+				<div class="col-lg-6 col-md-6 col-xs-12">
+					<div id="social-div">
 						<a href="https://plus.google.com/116123520062570463504" class="badge social gplus" target="_blank"><i class="fa fa-google"></i></a>
 						<a href="https://twitter.com/PlaysnakGames" class="badge social twitter" target="_blank"><i class="fa fa-twitter"></i></a>
 						<a href="https://www.linkedin.com/company-beta/5125840/" class="badge social linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
@@ -587,13 +401,13 @@ mark{
 		<div class=".container-fluid">
 			<div id="google-map"></div>
 		</div>		
-	</section><!-- instructor -->
+	</section><!-- contact -->
 
 	<!-- FOOTER
 	================================================== -->
 	<footer>
 		<div class="container">
-			<div class="col-sm-6">
+			<div class="col-xs-12 col-md-6">
 				<nav>
 					<ul class="list-unstyled list-inline">
 						<li>
@@ -605,9 +419,9 @@ mark{
 					</ul>
 				</nav>
 			</div>
-			<div class="col-sm-6">
+			<div class="col-xs-12 col-md-6">
 				<nav>
-					<ul class="list-unstyled list-inline pull-right">
+					<ul class="list-unstyled list-inline pull-right" id="footer-right">
 						<li><strong>Playsnak GmbH</strong></li>
 						<li>Bismarckstr. 10, 10625 Berlin</li>
 					</ul>
@@ -615,81 +429,6 @@ mark{
 			</div><!-- end col -->
 		</div><!-- container -->
 	</footer>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="assets/js/jquery-2.1.1.min.js"></script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/additional-methods.min.js"></script>
-
-    <script src="assets/js/bootstrap.min.js"></script>
-    
-    <script src="assets/js/main.js"></script>
-    
-    <script type="text/javascript" src="//use.typekit.net/gla7wnd.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbWn70yk2gZLyTcX3Ahfxnd2JkCDKYekA&callback=myMap"></script>
-	<script type="text/javascript">
-		var form = $( "#myform" );
-
-	    $( document ).ready(function() {
-			form.validate();
-	        console.log( "document loaded" );
-	    });
-
-		$( "#btnSubscribe" ).click(function() {
-			$( "#btnSubscribe" ).blur();
-
-			// https://jqueryvalidation.org/
-			if (!form.valid()){
-				return;
-			}
-			
-			var email = $("#subscribeInputEmail");
-			if(email.val() == ""){
-				email.focus();
-				alert("Please enter a valid email address.");
-				return;
-			}
-
-			alert(":) valid email : " + email.val());
-		});
-
-		function myMap() {
-
-		  var playsnak_positon = {lat: 52.512930, lng: 13.316290};
-		  var map = new google.maps.Map(document.getElementById('google-map'), {
-		    zoom: 15,
-		    center: playsnak_positon,
-		    scrollwheel: false,
-		    draggable: false
-		  });
-
-		  var contentString = '<strong>Playsnak GmbH</strong><br/>Bismarckstr. 10, 10625, Germany';
-
-		  var infowindow = new google.maps.InfoWindow({
-		    content: contentString
-		  });
-
-		  var marker = new google.maps.Marker({
-		    position: playsnak_positon,
-		    map: map,
-		    icon : 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
-		    title: 'Playsnak GmbH'
-		  });
-
-		  // marker.addListener('click', function() {
-		  //   // infowindow.open(map, marker);
-		  //   alert("test")
-		  // });
-
-		  infowindow.open(map,marker);
-		}
-	</script>
 
 	<!-- MODAL
 	================================================== -->
@@ -715,7 +454,7 @@ mark{
 	      </div>
 	    </div>
 	  </div>
-	</div>	
+	</div>	<!-- modal Imprint -->
 
 	<!-- modal Privacy Policy -->
 	<div class="modal fade bs-example-modal-md" id="Policy-Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -760,6 +499,25 @@ mark{
 	      </div>
 	    </div>
 	  </div>
-	</div>
+	</div><!-- modal Privacy Policy -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="assets/js/jquery-2.1.1.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/additional-methods.min.js"></script>
+
+    <script src="assets/js/bootstrap.min.js"></script>
+    
+    <script src="assets/js/main.js"></script>
+	<script type="text/javascript" src="assets/js/segment.js"></script>
+
+    <script type="text/javascript" src="//use.typekit.net/gla7wnd.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbWn70yk2gZLyTcX3Ahfxnd2JkCDKYekA&callback=myMap"></script>
 </body>
 </html>
