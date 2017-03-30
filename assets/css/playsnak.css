@@ -587,7 +587,31 @@ footer a:hover {
 }
 
 /* ==== MEDIA QUERIES ==== */
+@media (min-width: 992px) {
+    .row-vcenter {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -o-box;
+        display: -ms-flexbox;
+        -webkit-box-align: center;
+        -moz-box-align: center;
+        -o-box-align: center;
+        -ms-flex-align: center;
+
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -o-flex;
+        display: flex;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -o-align-items: center;
+        align-items: center;
+    }
+}
 @media screen and (max-width : 991px) {
+	.jobs-description {
+		color: yellow !important;
+	}
 	.half-blue-background{
 	  /*background: linear-gradient(to right, #0092d0 0%, #0092d0 50%, white 50%, white 100%);*/
 	  background: #0092d0 !important;
@@ -610,14 +634,42 @@ footer a:hover {
 	#jobs-title{
 		padding-top: 20px;
 	}
+
+/*
+				#games > .container{
+					width: 100%; 
+					padding: 0;
+					height: 100%
+					min-height: 100%;
+				}*/
+
+				#games > .container > .row-fluid{
+					display: box !important;
+				}
+				#games-left {
+					height: 964px;
+				}
+
+/*
+				#games-left {
+				 	background: url('../img/main_games_leftimage.png') no-repeat 50% 50%;
+					background-size: cover;
+				}
+				#games-right {
+					background: url('../img/main_games_rightimage.png') no-repeat 50% 50%;
+					background-size: cover;
+				}	*/
 }
 
 @media screen and (max-width : 768px) {
+	.jobs-description {
+		color: red !important;
+	}
 	.ui-segment{
 		/*background-color: blue;*/
 		margin-top: 15px;
-
 	}
+
 	#myform > div{
 		padding-top: 5px;
 	}
@@ -640,9 +692,13 @@ footer a:hover {
 		text-align: center !important;
 		float: left !important;
 	}
+
 }
 
 @media screen and (max-width : 568px) {
+	.jobs-description {
+		color: blue !important;
+	}
 	.ui-segment{
 		/*background-color: red;*/
 		margin-top: 15px;
@@ -851,6 +907,7 @@ footer a:hover {
 	font-weight: 700;
 	text-align: left;
 	color: #959595;
+	padding-right: 10%
 }
 
 #parteners{
@@ -891,15 +948,6 @@ label#subscribeInputEmail-error.error{
 
 .half-blue-background{
   background: linear-gradient(to right, #0092d0 0%, #0092d0 50%, white 50%, white 100%);
-}
-
-.aboutus-half-background{
-/*	background-image: url(assets/img/main_about_leftimage.png), linear-gradient(#0092d0, white); 
-	background-repeat: no-repeat;
-	background-size: 50% 100%;
-*/
-
-  /*background: linear-gradient(to right, #0092d0 0%, #0092d0 50%, white 50%, white 100%);*/
 }
 
 mark{
@@ -955,6 +1003,60 @@ h2 > bdi.white-underline-title{
 	font-family: Teko;
 	font-weight: 400;
 	font-size: 35px;
-	color: gray;
+	color: white;
 }
 
+
+#games > .container{
+	width: 100%; 
+	padding: 0;
+/*	height: 100%
+	min-height: 100%;*/
+}
+
+#games > .container > .row-fluid{
+	display: flex;
+}
+
+#games-left {
+	background: url('../img/main_games_leftimage.png') no-repeat 50% 50%;
+	background-size: cover;
+}
+#games-right {
+	background: url('../img/main_games_rightimage.png') no-repeat 50% 50%;
+	background-size: cover;
+}
+#games-text {
+    padding-right: 10%;
+    padding-bottom: 15px;
+}
+
+
+#aboutus > .container{
+	width: 100%; 
+	padding: 0;
+/*	height: 100%
+	min-height: 100%;*/
+}
+
+#aboutus > .container > .row-fluid{
+	display: flex;
+}
+#aboutus-left {
+	background: url('../img/mobile_main_about_background.png') no-repeat 50% 50%;
+	background-size: cover;
+}
+/*
+#games-right {
+	background: url('../img/main_games_rightimage.png') no-repeat 50% 50%;
+	background-size: cover;
+}*/
+#aboutus-right {
+	background: url('../img/mobile_main_about_image.png') no-repeat 50% 50%;
+	background-size: cover;
+}
+
+#about-text {
+    padding-left: 5%;
+    padding-bottom: 15px;
+}
