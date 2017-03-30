@@ -248,7 +248,7 @@ form textarea {
 }
 
 section {
-	padding: 30px 0 20px 0;
+	padding: 10px 0 20px 0;
 }
 
 .section-header {
@@ -611,7 +611,9 @@ footer a:hover {
 		text-align: center !important;
 		float: left !important;
 	}
-
+	#jobs-title{
+		padding-top: 20px;
+	}
 }
 
 @media screen and (max-width : 768px) {
@@ -827,9 +829,14 @@ footer a:hover {
 	left : 200px;
 }
 
-.bg-blue {
+.jobs-list > li > button{
 	background-color: #0092d0;
+	font-family: Rajdhani;
+	font-size: 19px;
+	font-weight: 500;
+	color: white;
 }
+
 .bg-white {
 	background-color: rgba(255,255,255,1);
 }
@@ -841,24 +848,13 @@ footer a:hover {
 	text-align: left;
 	color: #4a4a4a;
 }
-.jobs-description {
-	/*
-02. small text: Fort style: Rajdhani-Medium, Font size: 19pt, Font color: #959595
 
-	*/
+.jobs-description {
 	font-family: Rajdhani;
 	font-size: 19px;
-	font-weight: 500;
-	line-height: 1.21;
+	font-weight: 700;
 	text-align: left;
 	color: #959595;
-}
-.apply-now {
-	font-family: Calibri;
-	font-size: 10px;
-	font-weight: 300;
-	color: white;
-	/*line-height: 1.21;*/
 }
 
 #parteners{
@@ -990,7 +986,8 @@ h2 > bdi.white-underline-title{
     /*background-color: red;*/
 }
 .games-description > div{
-	color :white;
 	font-family: Teko;
-	font-size: 17.5px;
+	font-weight: 400;
+	font-size: 35px;
+	color: white;
 }
