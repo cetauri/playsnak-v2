@@ -1,0 +1,30 @@
+.ui-segment{
+	color: #0092d0;
+	border: 1px solid #0092d0;
+	border-radius: 4px;
+	display:inline-block;
+	/*font-family: 'Lato',Georgia, Serif;*/
+}
+.ui-segment span.option.active{
+	background-color: #0092d0;
+	color: white;
+}
+.ui-segment span.option{
+	font-size: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 20px;
+	text-align:center;
+	display:inline-block;
+	line-height: 25px;
+	margin: 0px;
+	float:left;
+	cursor:pointer;
+	border-right:1px solid #0092d0;
+}
+.ui-segment span.option:last-child{
+	border-right: none;
+}
+.segment-select{
+	display:none;
+}
