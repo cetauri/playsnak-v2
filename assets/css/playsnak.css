@@ -616,7 +616,7 @@ footer a:hover {
 	  /*background: linear-gradient(to right, #0092d0 0%, #0092d0 50%, white 50%, white 100%);*/
 	  background: #0092d0 !important;
 	}
-	#jobs_text{
+	#jobs_left{
 		background-color: #0092d0;
 	}
 	#myform > div{
@@ -760,21 +760,16 @@ footer a:hover {
 #blog {
 	 background-color: white;
 }
-/*
-.navbar-nav {
-	padding-top: 10px !important;
+
+.navbar-brand{
+	padding-top: 5px;
 }
 #logo {
-	padding-top: 10px;	
-	width: 107px;
-	height: 24px;
-}*/
-
-.navbar {
-   height: 80px;
-   min-height: 80px;
+	/*background-color: red;*/
+	width: 180px;
+	/*height: 24px;*/
 }
-/**/
+
 .navbar-nav > .active > a > div {
     color: #0092d0;
 	padding-bottom: 1px;
