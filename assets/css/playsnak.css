@@ -12,7 +12,7 @@ body {
 	/*margin-top: 50px;
 	font-family: 'Teko-Semibold', sans-serif;
 	font-size: 16px;*/
-	font
+	
 	background-color: rgba(0,0,0, 0.8);
 	/*opacity: 0.8*/
 }
@@ -334,10 +334,6 @@ section.main-content {
 #parteners {
 	background-color: #3e4249;
 	color: white;
-}
-
-#newsletter {
-	background-color: #363636;
 }
 
 /*#parteners .num {
@@ -954,40 +950,11 @@ h2 > bdi.white-underline-title{
 .mailLink{
 	text-decoration: underline;
 }
-.about-description{
-    /*background: none repeat scroll 0 0 #FFffff;*/
-    /*opacity: 0.5;*/
-    /*margin: 0 auto;*/
-    margin-top: -60%;
-    margin-left: 30%; 
-    margin-right: 7%;
-    /*text-align:center;*/
-    position: relative;
-    /*width:60%;*/
-    /*background-color: red;*/
-}
-.about-description > div{
-	color :white;
-	font-family: Teko;
-	font-size: 17.5px;
-}
 
-
-.games-description{
-    /*background: none repeat scroll 0 0 #FFffff;*/
-    /*opacity: 0.5;*/
-    /*margin: 0 auto;*/
-    margin-top: -60%;
-    margin-left: 7%; 
-    margin-right: 7%;
-    /*text-align:center;*/
-    position: relative;
-    /*width:60%;*/
-    /*background-color: red;*/
-}
-.games-description > div{
+.col-text{
 	font-family: Teko;
 	font-weight: 400;
 	font-size: 35px;
-	color: white;
+	color: gray;
 }
+

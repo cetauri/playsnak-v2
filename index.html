@@ -145,52 +145,82 @@
 	</section><!-- carousel -->
 
 	<!-- ABOUT US
-	================================================== - ->
+	================================================== -->
+<style type="text/css">
+.aboutus-col::before {
+/*    right: -10;
+    background-color: gray;*/
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /*top: 0;*/
+    content: " ";
 
+}
+.aboutus-col.is-left::before {
+    right: 0px;
+    /*background: orange;*/
+    z-index: 0;
+    background-image: url("assets/img/main_about_leftimage.png");
+}
+.aboutus-col.is-right::before {
+    left: 0px;
+    /*background: blue;*/
+}
+.aboutus-text {
+	position: relative;
+	z-index: 3;
+}
+</style>
 	<section id="aboutus" class="aboutus-half-background">
-		<div class=".container-fluid">
+		<div class="container">
 			<div class="row">
-				<div class="col-md-6 zero-padding">
-					<img src="assets/img/main_about_leftimage.png">
-					<div class="caption about-description">
+				<div class="col-md-6">
+                	<div class="aboutus-col is-left">
+                    <div class="aboutus-text">
 		            	<h2><bdi class="blue-text">About us</bdi></h2> 
-						<div>Playsnak is a start-up company focused on mobile games publishing and Virtual Reality development. </div>
-						<div>Today, as mobile gaming matures and immersive VR experiences gain traction, </div>
-						<div>our goal is to merge these mediums by creating games that combine the accessibility </div>
-						<div>of mobile play with the stunning possibilities of ever-evolving VR technologies. </div>
-						<div>Skillfully adding VR components to already-amazing games enables us – and our </div>
-						<div>partners – to deliver unique and exciting content that we believe will capture </div>
-						<div>the imagination of gamers long into the future. </div>
+						<div class="col-text">Playsnak is a start-up company focused on mobile games publishing and Virtual Reality development. </div>
+						<div class="col-text">Today, as mobile gaming matures and immersive VR experiences gain traction, </div>
+						<div class="col-text">our goal is to merge these mediums by creating games that combine the accessibility </div>
+						<div class="col-text">of mobile play with the stunning possibilities of ever-evolving VR technologies. </div>
+						<div class="col-text">Skillfully adding VR components to already-amazing games enables us – and our </div>
+						<div class="col-text">partners – to deliver unique and exciting content that we believe will capture </div>
+						<div class="col-text">the imagination of gamers long into the future. </div>
 						<div class="jobs-link">
 							<a href="">Read more ></a>
 						</div>
-		            </div>
+					</div>
+					</div>
+				</div>				
+				<div class="col-md-6 zero-padding">
+                	<div class="aboutus-col is-right">
+                    <div class="title">
+						<img src="assets/img/main_about_rightimage.png">
+					</div>
+					</div>
 				</div>
-				<div class="col-md-6 zero-padding"><img src="assets/img/main_about_rightimage.png"></div>
-				<!-- end col - ->
-			</div><!-- row - ->
-		</div><!-- container - ->
-	</section><!-- aboutus - ->
+				<!-- end col -->
+			</div><!-- row -->
+		</div><!-- container -->
+
+	</section><!-- aboutus -->
 
 
 	<!-- GAMES
 	================================================== -->
 	<section id="games">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-6 "><img src="assets/img/main_games_leftimage.png"></div>
-				<div class="col-md-6 " style="background: url(assets/img/main_about_leftimage.png);">
-					<img src="assets/img/main_games_rightimage.png">
-					<div class="caption games-description">
-		            	<h2><bdi class="blue-text">Games</bdi></h2> 
-						<div>As our name suggests, games are the heart and soul of everything we do. </div>
-						<div>Very soon, we’ll be announcing the first game in our publishing portfolio, as well as more details about our own development <div>projects. </div>
-						<div>For us, the combination of mobile gaming and VR represents an area of huge potential growth for the games industry. </div>
-						<div>To make sure we’re primed for the future, we’ve assembled a team of world-class talent that has operated on the front line of both sectors and already has experience of leading game-changing developments in both the mobile and VR markets.						</div>
-						<div class="jobs-link">
-							<a href="">Read more ></a>
-						</div>
-		            </div>
+		<div class="container" style="background-color: blue">
+			<div class="row-fluid">
+				<div class="col-md-6 zero-padding"><img src="assets/img/main_games_leftimage.png"></div>
+				<div class="col-md-6" style="background-color: red">
+	            	<h2><bdi class="blue-text">Games</bdi></h2> 
+					<div class="col-text">As our name suggests, games are the heart and soul of everything we do. </div>
+					<div class="col-text">Very soon, we’ll be announcing the first game in our publishing portfolio, as well as more details about our own development <div class="col-text">projects. </div>
+					<div class="col-text">For us, the combination of mobile gaming and VR represents an area of huge potential growth for the games industry. </div>
+					<div class="col-text">To make sure we’re primed for the future, we’ve assembled a team of world-class talent that has operated on the front line of both sectors and already has experience of leading game-changing developments in both the mobile and VR markets.						</div>
+					<div class="col-text" class="jobs-link">
+						<a href="">Read more ></a>
+					</div>
 				</div><!-- end col -->
 			</div><!-- row -->
 		</div><!-- container -->
