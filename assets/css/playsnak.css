@@ -1,8 +1,6 @@
 /* COLOUR REFERENCES
 
-Green:		#79b044
-Salmon:		#dd5638
-Blue Gray:  #3e4249
+Blue:  #0092d0
 
 */
 
@@ -15,8 +13,8 @@ body {
 	
 	background-color: rgba(0,0,0, 0.8);
 	/*opacity: 0.8*/
+	padding-top: 50px; 
 }
-
 /* ==== GLOBAL ==== */
 
 h1,h2,h3,h4,h5,h6 {
@@ -666,6 +664,10 @@ footer a:hover {
 	#games-text {
 	    padding-left: 3%;
 	}
+	.carousel-indicators li{
+		width: 20px !important;
+		height: 20px !important;
+	}	
 }
 
 @media screen and (max-width : 768px) {
@@ -681,14 +683,8 @@ footer a:hover {
 		padding-top: 5px;
 	}
 	.carousel-indicators li {
-		width: 20px !important;
-		height: 20px !important;
-	}
-	.carousel-indicators .active {
-		width: 20px !important;
-		height: 20px !important;
-
-		background-color: 	 red !important;
+		width: 17px !important;
+		height: 17px !important;
 	}
 	
 	#partners-list{
@@ -734,10 +730,6 @@ footer a:hover {
 	}
 
 	.carousel-indicators li {
-		width: 10px !important;
-		height: 10px !important;
-	}
-	.carousel-indicators .active{
 		width: 10px !important;
 		height: 10px !important;
 	}
@@ -836,20 +828,49 @@ footer a:hover {
 .blue-border-color{
 	color: #0092d0;
 	background-color: rgba(0,0,0,0);
-    border: 1.5px solid #0092d0;
+    border: 3px solid #0092d0;
+}
+.white-border-color{
+	color: white;
+	background-color: rgba(0,0,0,0);
+    border: 3px solid white;
 }
 .carousel-desc{
-	font-size: 74.3px;
-	font-family: "Teko-Light";
+	font-size: 148px;
+	font-family: Teko;
+	font-weight: 300;
 	color: white;
 }
-.carousel-desc19{
-	font-size: 19.9px;
+.carousel-desc40{
+	font-size: 40px;
+	font-family: Teko;
+	font-weight: 300;
 	color: #0092d0;
 }
-.carousel-desc16{
-	font-size: 16.4px;
+.carousel-desc33{
+	font-size: 33px;
+	font-family: Teko;
+	font-weight: 300;
 	color: #0092d0;
+}
+.carousel-desc69{
+	font-size: 69px;
+	font-family: Teko;
+	font-weight: 300;
+	color: #0092d0;
+}
+.carousel-desc19{
+	font-size: 33px;
+	color: black;
+	font-family: Teko;
+	font-weight: 300;
+}
+.carousel-desc16{
+	font-size: 40px;
+	color: white;
+	font-family: Teko;
+	font-weight: 300;
+
 }
 .jobs-link > a{
 	color: #0092d0;
@@ -863,13 +884,16 @@ footer a:hover {
 	text-align: left;	
 }
 .carousel-desc34{
-	font-size: 34.6px;
-	color: #0092d0;
+	font-size: 40px;
+	color: white;
+	font-family: Teko;
+	font-weight: 300;
 }
 
-.carousel-caption {
+/*.carousel-caption {
     padding-bottom: 250px;
-}
+
+}*/
 .zero-padding {
 	padding: 0px
 }

@@ -30,7 +30,20 @@ $( "#btnSubscribe" ).click(function() {
 		return;
 	}
 
-	alert(":) valid email : " + email.val());
+	$.ajax({
+
+	  url: "https://script.google.com/macros/s/AKfycbyejp2Gj0Rnjtsp-Tl_XdZk0GH87lQda4FOoKKfudYSxv_7vUlF/exec",
+	  data: {
+	  	email:email.val()
+	  },
+	  type: "POST"
+	}).done(function() {
+	  alert("Thank you! :)");
+	}).fail(function() {
+	    alert( "error" );
+	})
+
+	// alert(":) valid email : " + email.val());
 });
 
 function myMap() {
