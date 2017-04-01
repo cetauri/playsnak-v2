@@ -1,11 +1,8 @@
-/* COLOUR REFERENCES
-
-Blue:  #0092d0
-
+/* 
+	blue:  #0092d0
 */
 
 /* ==== GENERAL ==== */
-
 body {
 	/*margin-top: 50px;
 	font-family: 'Teko-Semibold', sans-serif;
@@ -15,6 +12,14 @@ body {
 	/*opacity: 0.8*/
 	padding-top: 50px; 
 }
+/* 
+	문제가 생기면 읽어보자!!
+	https://spin.atomicobject.com/2015/03/06/bootstrap-add-xl-grid-size-option/
+*/
+.container{
+	width: 95%;
+}
+
 /* ==== GLOBAL ==== */
 
 h1,h2,h3,h4,h5,h6 {
@@ -147,7 +152,7 @@ a.text-danger:hover {
 
 /* === CUSTOM ICON SPRITES === */
 
-i.ci {
+/*i.ci {
 	display: inline-block;
 	height: 40px;
 	width: 40px;
@@ -160,91 +165,7 @@ i.ci {
 .ci.ci-community	{ background-position: -120px 0; }
 .ci.ci-parteners	{ background-position: -160px 0; }
 .ci.ci-device		{ background-position: -200px 0; }
-
-/* ==== FORMS ==== */
-
-label {
-	display: block;
-	font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-textarea {
-	color: #666;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-	display: block;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	width: 100%;
-	padding: 6px 12px;
-}
-
-input[type="submit"],
-button[type="submit"] {
-	display: inline-block;
-	margin-bottom: 0;
-	font-size: 18px;
-	font-weight: bold;
-	line-height: 1.33;
-	text-align: center;
-	white-space: nowrap;
-	vertical-align: middle;
-	cursor: pointer;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	background-image: none;
-	border: none;
-	border-radius: 6px;
-}
-
-input[type="submit"]:hover,
-button[type="submit"]:hover {
-	outline: none;
-	border: none;
-	background: #aaa;
-}
-
-form.search-form .form-group {
-	margin: 0;
-}
-
-form.search-form .input-group {
-	width: 100%;
-}
-
-form.search-form .input-group input[type="search"],
-form.search-form .input-group input[type="text"] {
-	width: 70%;
-}
-
-form.search-form .input-group input[type="submit"] {
-	width: 30%;
-	border-top-left-radius: 0;
-	border-bottom-left-radius: 0;
-	float: right;
-}
-
-form textarea {
-	width: 100%;
-	border: 1px solid #ccc;
-	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-}
-
-/* ==== LAYOUT ==== */
-
-.row + .row {
-	margin-top: 20px;
-}
-
+*/
 section {
 	padding: 10px 0 20px 0;
 }
@@ -265,66 +186,6 @@ section.main-content {
 	padding: 40px 0;
 }
 
-#primary {
-	padding-top: 40px;
-	padding-bottom: 40px;
-}
-
-.feature-image {	
-	display: table;
-	width: 100%;
-}
-
-.feature-image-default {
-	background: url('../img/stuff-feature.jpg') no-repeat;
-	background-size: cover;
-}
-
-.feature-image-default-alt {
-	background: url('../img/hipster-stuff.jpg') no-repeat;
-	background-size: cover;
-}
-
-.feature-image h1 {
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-	color: white;
-}
-
-#optin {
-	background: #3e4249;
-	padding: 20px 0;
-	color: white;
-	-webkit-font-smoothing: antialiased;
-	text-rendering: optimizelegibility;
-	font-size: 1.2em;
-}
-
-#optin p {
-	margin: 7px 0 0 0;
-}
-
-#course-features {
-	background: #3e4249;
-	color: white;
-	text-align: center;
-}
-
-#who-benefits {
-	background: white;
-}
-
-#project-features {
-	text-align: center;
-}
-
-#featurette {
-	background: url('../img/stuff-bg.jpg') 50% 100% repeat fixed;
-	background-size: cover;
-	text-align: center;
-	color: white;
-}
 #jobs{
 	/*background-color: #0092d0;*/
 	/*color: white;	*/
@@ -332,66 +193,6 @@ section.main-content {
 #parteners {
 	background-color: #3e4249;
 	color: white;
-}
-
-/*#parteners .num {
-	display: table;
-	font-size: 30px;
-	font-weight: bold;
-	color: white;
-	line-height: 24px;
-	height: 140px;
-	width: 140px;
-	text-align: center;
-	background: #dd5638;
-	-webkit-border-radius: 100%;
-	-moz-border-radius: 100%;
-	border-radius: 100%;
-	-webkit-font-smoothing: antialiased;
-	text-rendering: optimizelegibility;
-}
-
-#parteners .num .num-content {
-	display: table-cell;
-	vertical-align: middle;
-}
-
-#parteners .num span {
-	display: block;
-	font-size: 20px;
-	font-weight: normal;
-}
-*/
-#kudos {
-	text-align: center;
-}
-
-.testimonial {
-	margin-bottom: 60px;
-}
-
-.testimonial img {
-	border-radius: 50%;
-}
-
-#signup {
-	text-align: center;
-	background: url('../img/hipster-stuff.jpg') center center repeat fixed;
-	background-size: cover;
-	color: white;
-	padding: 140px 0;
-}
-
-#signup h2 {
-	font-weight: normal;
-}
-
-#signup h2 strong {
-	border-bottom: solid 2px #dd5638;
-}
-
-#signup .btn {
-	font-size: 24px;
 }
 
 footer {
@@ -415,332 +216,6 @@ footer a:hover {
 	color: #dd5638;
 }
 
-
-/* ==== BLOG ==== */
-
-.post, .widget, #comments {
-	position: relative;
-	border: solid 1px #ddd;
-	background: white;
-	margin: 0 0 40px;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-}
-
-.post header,
-.post .post-excerpt,
-.post .post-body,
-#comments .comments-wrap {
-	padding: 20px;
-}
-
-.post header h3 {
-	margin: 0 0 15px;
-	padding: 0 0 15px;
-	border-bottom: solid 1px #ddd;
-}
-
-.post header h1 {
-	margin: 0 0 15px;
-	padding: 0 0 15px;
-	border-bottom: solid 1px #ddd;
-	font-size: 24px;
-}
-
-.post-image {
-	height: auto;
-}
-
-.post-details {
-	font-size: 12px;
-	width: 90%;
-}
-
-.post-details i.fa {
-	padding-left: 10px;
-}
-
-.post-details i.fa:first-child {
-	padding: 0;
-}
-
-/* === COMMENTS === */
-
-.post-comments-badge {
-	height: 70px;
-	width: 70px;
-	position: absolute;
-	top: 25px;
-	right: 20px;
-	border: none;
-	-webkit-border-radius: 100px;
-	-moz-border-radius: 100px;
-	border-radius: 100px;
-	background: #79b044;
-	text-align: center;
-	display: table;
-}
-
-.post-comments-badge a {
-	display: table-cell;
-	vertical-align: middle;
-	color: white;
-	font-size: 20px;
-	line-height: 20px;
-}
-
-.post-comments-badge i.fa {
-	display: block;
-	font-size: 15px;
-	padding: 0;
-	margin-bottom: 4px;
-}
-
-.post-comments-badge:hover {
-	background-color: #8bc653;
-}
-
-#comments h3 {
-	text-align: center;
-}
-
-#comments h4 {
-	font-size: 1.3em;
-}
-
-#comments ol {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
-
-#comments ol li {
-	background: rgba(0,0,0,0.02);
-	padding: 10px 20px;
-	margin: 10px 0;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	border: solid 1px rgba(0,0,0,0.03);
-}
-
-#comments ol li ol.children {
-	padding: 0;
-	list-style: none;
-	font-size: 0.96em;
-}
-
-#leave-comment {
-	margin: 40px 0 0;
-	padding: 20px 0 0;
-	border-top: solid 1px #eee;
-}
-
-/* === RESOURCES === */
-
-.resource {
-	width: 31.33333333%;
-	float: left;
-	margin: 0 3% 40px 0;
-}
-
-.resource:nth-child(3n) {
-	margin-right: 0;
-}
-
-/* === WIDGETS === */
-
-.widget {
-	padding: 20px;
-}
-
-.widget h4 {
-	margin: 0 0 10px;
-	padding: 0 0 10px;
-	border-bottom: solid 1px #ddd;
-}
-
-.widget ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-.widget ul li {
-	margin: 0 0 5px;
-}
-
-.widget ul li:hover {
-	position: relative;
-	left: 1px;
-}
-
-/* 
-	문제가 생기면 읽어보자!!
-	https://spin.atomicobject.com/2015/03/06/bootstrap-add-xl-grid-size-option/
-*/
-.container{
-	width: 95%;
-}
-
-/* ==== MEDIA QUERIES ==== */
-@media (min-width: 992px) {
-    .row-vcenter {
-        display: -webkit-box;
-        display: -moz-box;
-        display: -o-box;
-        display: -ms-flexbox;
-        -webkit-box-align: center;
-        -moz-box-align: center;
-        -o-box-align: center;
-        -ms-flex-align: center;
-
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -o-flex;
-        display: flex;
-        -webkit-align-items: center;
-        -moz-align-items: center;
-        -o-align-items: center;
-        align-items: center;
-    }
-}
-@media screen and (max-width : 991px) {
-	.jobs-description {
-		color: yellow !important;
-	}
-	.half-blue-background{
-	  /*background: linear-gradient(to right, #0092d0 0%, #0092d0 50%, white 50%, white 100%);*/
-	  background: #0092d0 !important;
-	}
-	#jobs_left{
-		background-color: #0092d0;
-	}
-	#myform > div{
-		padding-top: 5px;
-	}
-
-	#partners-list{
-		text-align: center;
-	}
-
-	#footer-right{
-		text-align: center !important;
-		float: left !important;
-	}
-	#jobs-title{
-		padding-top: 20px;
-	}
-
-	#aboutus > .container > .row-fluid {
-		display: block !important;
-	}
-	#aboutus-left{
-		padding-top: 20px;
-		padding-right: 10%;
-	}
-	#aboutus-right{
-		height: 500px;
-	}
-	#aboutus-right{
-		/*padding-left: 10px;*/
-		/*padding-top: 20px;	*/
-	}
-	#aboutus-text {
-	    /*padding-right: 10%;*/
-	}
-
-	#games > .container > .row-fluid {
-		display: block !important;
-	}
-	#games-left{
-		height: 500px;
-	}
-	#games-right{
-		/*padding-left: 10px;*/
-		padding-top: 20px;	
-	}
-	#games-text {
-	    padding-left: 3%;
-	}
-	.carousel-indicators li{
-		width: 20px !important;
-		height: 20px !important;
-	}	
-}
-
-@media screen and (max-width : 768px) {
-	.jobs-description {
-		color: red !important;
-	}
-	.ui-segment{
-		/*background-color: blue;*/
-		margin-top: 15px;
-	}
-
-	#myform > div{
-		padding-top: 5px;
-	}
-	.carousel-indicators li {
-		width: 17px !important;
-		height: 17px !important;
-	}
-	
-	#partners-list{
-		text-align: center;
-	}
-
-	#footer-right{
-		text-align: center !important;
-		float: left !important;
-	}
-
-}
-
-@media screen and (max-width : 568px) {
-	.jobs-description {
-		color: blue !important;
-	}
-	.ui-segment{
-		/*background-color: red;*/
-		margin-top: 15px;
-		margin-left: 15px;
-	}
-	#multi_language{
-		visibility: none;
-	}
-/*	#multi_language2 .ui-segment{
-		margin-top: 10px;
-
-	padding-top: 13px;
-	font-family: Teko;
-}*/
-	footer div > div nav {
-		text-align: center;
-	}
-
-	#social-div{
-		text-align: center !important;
-		padding-top: 20px;
-	}
-
-	#myform > div{
-		padding-top: 5px;
-	}
-
-	.carousel-indicators li {
-		width: 10px !important;
-		height: 10px !important;
-	}
-
-	#footer-right{
-		width: 100%!important;
-		text-align: center !important;
-		float: center !important;
-	}
-}
-
 #google-map {
 	height: 400px;
 }
@@ -752,16 +227,13 @@ footer a:hover {
 #blog {
 	 background-color: white;
 }
-
 .navbar-brand{
 	padding-top: 5px;
 }
 #logo {
-	/*background-color: red;*/
 	width: 180px;
 	/*height: 24px;*/
 }
-
 .navbar-nav > .active > a > div {
     color: #0092d0;
 	padding-bottom: 1px;
@@ -779,16 +251,6 @@ footer a:hover {
     font-size: 27px !important;
 	font-weight: 600;
 }
-
-/*.navbar-nav > a > div {
-    color: #0092d0;
-	padding-bottom: 1px;
-    border-bottom: 2px solid #0092d0;
-    font-family: Teko-Semibold;
-	font-size: 13.5px;
-	font-weight: 600;
-}*/
-
 .navbar-inverse { 
 	background-color: rgba(0,0,0, 0.8) !important;
 }
@@ -797,7 +259,6 @@ footer a:hover {
   width: 100%;
   margin: auto;
 }
-
 .carousel-indicators li {
 	width: 23px;
 	height: 23px;
@@ -841,36 +302,63 @@ footer a:hover {
 	font-weight: 300;
 	color: white;
 }
-.carousel-desc40{
+.carousel-desc-1{
 	font-size: 40px;
 	font-family: Teko;
 	font-weight: 300;
 	color: #0092d0;
 }
-.carousel-desc33{
+.carousel-desc-2{
 	font-size: 33px;
 	font-family: Teko;
 	font-weight: 300;
 	color: #0092d0;
 }
-.carousel-desc69{
+.carousel-desc-3{
 	font-size: 69px;
 	font-family: Teko;
 	font-weight: 300;
 	color: #0092d0;
 }
-.carousel-desc19{
+.carousel-desc-5{
 	font-size: 33px;
 	color: black;
 	font-family: Teko;
 	font-weight: 300;
 }
-.carousel-desc16{
+.carousel-desc-4{
 	font-size: 40px;
 	color: white;
 	font-family: Teko;
 	font-weight: 300;
+}
 
+.carousel-desc-6{
+	font-size: 40px;
+	color: white;
+	font-family: Teko;
+	font-weight: 300;
+}
+#carousel-circle {
+	width: 600px;
+	height: 600px;
+	border-radius: 100%;
+	align-items: center;
+	display: flex;;
+	background-color: rgba(0, 146, 208, 0.8);
+}
+.carousel-caption {
+	display: flex;
+	align-items: center;
+    height: 100%;
+    justify-content: center;
+}	
+#carousel-descrption{
+	text-align: center;
+	width: 100%;
+}
+.black{
+	color: black;
 }
 .jobs-link > a{
 	color: #0092d0;
@@ -883,24 +371,11 @@ footer a:hover {
 	letter-spacing: normal;
 	text-align: left;	
 }
-.carousel-desc34{
-	font-size: 40px;
-	color: white;
-	font-family: Teko;
-	font-weight: 300;
-}
 
-/*.carousel-caption {
-    padding-bottom: 250px;
-
-}*/
 .zero-padding {
 	padding: 0px
 }
-.nopadding {
-	padding: 0 !important;
-	margin: 0 !important;
-}
+
 .float-div {
 	position: absolute;
 	top : 108px;
@@ -948,10 +423,6 @@ footer a:hover {
 	text-align: right;
 }
 
-label#subscribeInputEmail-error.error{
-	color: white;
-}
-
 #games, #aboutus, #carousel{
 	padding: 0px;
 }
@@ -996,16 +467,11 @@ mark{
 	font-family: 'Rajdhani';
 	font-size: 23px;
 	font-weight: 500;
-	/*font-family: 'Rajdhani-Medium';
-	font-size: 12px;*/
 }
 
 #contact-div > small{
 	color: #959595;
 }
-/*.subscribe-now{
-	width: 200px;
-}*/
 
 h2 > bdi {
 	font-family: Teko;
@@ -1032,12 +498,9 @@ h2 > bdi.white-underline-title{
 	color: white;
 }
 
-
 #games > .container{
 	width: 100%; 
 	padding: 0;
-/*	height: 100%
-	min-height: 100%;*/
 }
 
 #games > .container > .row-fluid{
@@ -1060,8 +523,6 @@ h2 > bdi.white-underline-title{
 #aboutus > .container{
 	width: 100%; 
 	padding: 0;
-/*	height: 100%
-	min-height: 100%;*/
 }
 
 #aboutus > .container > .row-fluid {
@@ -1080,4 +541,158 @@ h2 > bdi.white-underline-title{
 #about-text {
     padding-left: 5%;
     padding-bottom: 15px;
+}
+
+#multi-language{
+	padding-left: 10px;
+	padding-top: 11px;
+}
+
+
+/* ==== MEDIA QUERIES ==== */
+@media (min-width: 992px) {
+    .row-vcenter {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -o-box;
+        display: -ms-flexbox;
+        -webkit-box-align: center;
+        -moz-box-align: center;
+        -o-box-align: center;
+        -ms-flex-align: center;
+
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -o-flex;
+        display: flex;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -o-align-items: center;
+        align-items: center;
+    }
+    .navbar-inverse{
+    	background-color: gray !important;
+    }
+}
+@media screen and (max-width : 991px) {
+    .navbar-inverse{
+    	background-color: green !important;
+    }
+	.half-blue-background{
+	  /*background: linear-gradient(to right, #0092d0 0%, #0092d0 50%, white 50%, white 100%);*/
+	  background: #0092d0 !important;
+	}
+	#jobs_left{
+		background-color: #0092d0;
+	}
+	#myform > div{
+		padding-top: 5px;
+	}
+	#partners-list{
+		text-align: center;
+	}
+	#footer-right{
+		text-align: center !important;
+		float: left !important;
+	}
+	#jobs-title{
+		padding-top: 20px;
+	}
+	#aboutus > .container > .row-fluid {
+		display: block !important;
+	}
+	#aboutus-left{
+		padding-top: 20px;
+		padding-right: 10%;
+	}
+	#aboutus-right{
+		height: 500px;
+	}
+	#games > .container > .row-fluid {
+		display: block !important;
+	}
+	#games-left{
+		height: 500px;
+	}
+	#games-right{
+		/*padding-left: 10px;*/
+		padding-top: 20px;	
+	}
+	#games-text {
+	    padding-left: 3%;
+	}
+	.carousel-indicators li{
+		width: 20px !important;
+		height: 20px !important;
+	}
+	.carousel-caption{
+		display: none;
+	}
+}
+
+@media screen and (max-width : 768px) {
+    .navbar-inverse{
+    	background-color: orange !important;
+    }
+	.ui-segment{
+		/*background-color: blue;*/
+		margin-top: 15px;
+	}
+	#myform > div{
+		padding-top: 5px;
+	}
+	.carousel-indicators li {
+		width: 17px !important;
+		height: 17px !important;
+	}
+	#partners-list{
+		text-align: center;
+	}
+	#footer-right{
+		text-align: center !important;
+		float: left !important;
+	}
+	.carousel-caption{
+		display: none;
+	}
+}
+
+@media screen and (max-width : 568px) {
+    .navbar-inverse{
+    	background-color: blue !important;
+    }
+	.ui-segment{
+		/*background-color: red;*/
+		margin-top: 15px;
+		margin-left: 15px;
+	}
+	#multi_language{
+		visibility: none;
+	}
+	footer div > div nav {
+		text-align: center;
+	}
+
+	#social-div{
+		text-align: center !important;
+		padding-top: 20px;
+	}
+	#myform > div{
+		padding-top: 5px;
+	}
+	.carousel-indicators li {
+		width: 10px !important;
+		height: 10px !important;
+	}
+	#footer-right{
+		width: 100%!important;
+		text-align: center !important;
+		float: center !important;
+	}
+	.carousel-caption{
+		display: none;
+	}
+	.carousel-inner .item > img:first-child {
+		content: url('../img/mobile_main_image_oursgames.png');
+	}
 }

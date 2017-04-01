@@ -1,18 +1,15 @@
 var form = $( "#myform" );
 
-
-$('.nav li').click(function() {
-	$(this).siblings('li').removeClass('active');
-	// $(this).siblings('li').removeClass('active');
-    $(this).addClass('active');
-});
-
-
-
 $( document ).ready(function() {
 	form.validate();
-    console.log( "document loaded" );
-   $(".segment-select").Segment();
+    // console.log( "document loaded" );
+	$(".segment-select").Segment();
+	
+	$('.nav li').click(function() {
+		$(this).siblings('li').removeClass('active');
+		// $(this).siblings('li').removeClass('active');
+	    $(this).addClass('active');
+	});
 });
 
 $( "#btnSubscribe" ).click(function() {
@@ -20,6 +17,7 @@ $( "#btnSubscribe" ).click(function() {
 
 	// https://jqueryvalidation.org/
 	if (!form.valid()){
+		alert("Email Address in invalid format");
 		return;
 	}
 	
@@ -31,14 +29,14 @@ $( "#btnSubscribe" ).click(function() {
 	}
 
 	$.ajax({
-
 	  url: "https://script.google.com/macros/s/AKfycbyejp2Gj0Rnjtsp-Tl_XdZk0GH87lQda4FOoKKfudYSxv_7vUlF/exec",
 	  data: {
-	  	email:email.val()
+	  	Email:email.val()
 	  },
 	  type: "POST"
 	}).done(function() {
-	  alert("Thank you! :)");
+		email.val("");
+	  	alert("Thank you! :)");
 	}).fail(function() {
 	    alert( "error" );
 	})
