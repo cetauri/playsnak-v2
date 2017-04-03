@@ -70,8 +70,8 @@
 							<li><a href="#contact"><div>contact</div></a></li>
 							<li id="multi-language">
 								<select class="segment-select">
-								    <option value="1">en</option>
-								    <option value="0">kr</option>
+								    <option value="en" selected>en</option>
+								    <option value="kr">kr</option>
 								</select>
 							</li>
 						</ul>
@@ -95,10 +95,10 @@
 		    <!-- Wrapper for slides -->
 		    <div class="carousel-inner" role="listbox">
 		      <div class="item active">
-		        <img src="assets/img/main_image_ourgames.png" alt="our games">
+		        <img src="assets/img/main_image_ourgames.png" alt="our games" id="carousel-back-image1">
 			    <div class="carousel-caption">
 			    	<div id="carousel-descrption">
-				    	<div class="carousel-desc">Our Games</div>
+				    	<div class="carousel-desc playanak-text">Our Games</div>
 					 	<div class="carousel-desc-1">the combination of mobile gaming and</div>
 						<div class="carousel-desc-2">VR represents an area of huge potential growth</div>
 						<div class="carousel-desc-3">for the games industry</div>
@@ -109,7 +109,7 @@
 		      </div>
 
 		      <div class="item">
-		        <img src="assets/img/main_image_whoweare.png" alt="who we are">
+		        <img src="assets/img/main_image_whoweare.png" alt="who we are" id="carousel-back-image2">
 		        <div class="carousel-caption" style="">
 			    	<div id="carousel-circle">
 				    	<div id="carousel-descrption">
@@ -199,7 +199,7 @@
 
 				<div class="col-md-6 bg-white">
 					<h2 id="jobs-title"><bdi class="black-underline-title" >Jobs</bdi></h2>
-					<p class="jobs-description">If you're as passionate about games as we are, and want to help rewrite the rulebook on game development and publishing, we should talk.</p>
+					<p class="jobs-description playanak-text">If you're as passionate about games as we are, and want to help rewrite the rulebook on game development and publishing, we should talk.</p>
 					
 					<ul class="jobs-list">
 						<li>
@@ -338,7 +338,7 @@
 				<div class="col-md-12">
 					<div class="row">
 						<div class="col-lg-8">
-							<h2><bdi class="white-underline-title">Our Parteners</bdi></h2>
+							<h2><bdi class="white-underline-title playanak-text">Our Parteners</bdi></h2>
 						</div><!-- end col -->	
 					</div><!-- row -->
 					<div class="row" id="partners-list">
@@ -505,5 +505,25 @@
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbWn70yk2gZLyTcX3Ahfxnd2JkCDKYekA&callback=myMap"></script>
+	<script type="text/javascript">
+
+		// $(".playanak-text").each(function(){
+		// 	var text = $(this).text();
+		// 	if (text != ""){
+		// 		console.log($(this).text());	
+		// 		$(this).text($(this));
+		// 	}
+
+		// });
+	
+		// $('.segment-select').change(function() {
+		//     // $(this).val() will work here
+		//     alert( this.value );
+		// });
+
+		// $('.segment-select').change( function() {
+		//   alert( this.value );
+		// });
+	</script>
 </body>
 </html>

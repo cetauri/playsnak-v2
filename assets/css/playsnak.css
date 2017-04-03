@@ -529,12 +529,12 @@ h2 > bdi.white-underline-title{
 	display: flex;
 }
 #aboutus-left {
-	background: url('../img/mobile_main_about_background.png') no-repeat 50% 50%;
+	background: url('../img/main_about_background.png') no-repeat 50% 50%;
 	background-size: cover;
 }
 
 #aboutus-right {
-	background: url('../img/mobile_main_about_image.png') no-repeat 50% 50%;
+	background: url('../img/main_about_rightimage.png') no-repeat 50% 50%;
 	background-size: cover;
 }
 
@@ -574,6 +574,7 @@ h2 > bdi.white-underline-title{
     	background-color: gray !important;
     }
 }
+
 @media screen and (max-width : 991px) {
     .navbar-inverse{
     	background-color: green !important;
@@ -626,7 +627,14 @@ h2 > bdi.white-underline-title{
 		height: 20px !important;
 	}
 	.carousel-caption{
-		display: none;
+		/*display: none;*/
+	}
+
+	#carousel-back-image1{
+		content: url('../img/mobile_main_image_oursgames.png');
+	}
+	#carousel-back-image2{
+		content: url('../img/mobile_main_image_whoweare.png');		
 	}
 }
 
@@ -652,9 +660,6 @@ h2 > bdi.white-underline-title{
 		text-align: center !important;
 		float: left !important;
 	}
-	.carousel-caption{
-		display: none;
-	}
 }
 
 @media screen and (max-width : 568px) {
@@ -672,7 +677,6 @@ h2 > bdi.white-underline-title{
 	footer div > div nav {
 		text-align: center;
 	}
-
 	#social-div{
 		text-align: center !important;
 		padding-top: 20px;
@@ -688,11 +692,5 @@ h2 > bdi.white-underline-title{
 		width: 100%!important;
 		text-align: center !important;
 		float: center !important;
-	}
-	.carousel-caption{
-		display: none;
-	}
-	.carousel-inner .item > img:first-child {
-		content: url('../img/mobile_main_image_oursgames.png');
 	}
 }
