@@ -33,22 +33,27 @@ function changeText() {
 
 	var jsonResponse = null;
 	$.ajax({
+	    contentType: 'application/json',
+
 		url: "/lang/ko.json",
 		type: "GET",
+	    dataType: 'json',
+
 		success: function(response) {
 			console.log(response);
-			jsonResponse = eval(response);
 
-			$(".playanak-text").each(function(){
-				var text = $(this).text();
-				if (text != ""){
-					console.log(text);	
-					// console.log(jsonResponse[text]);
-					$(this).text(jsonResponse[text]);
+			try{
+				$(".playanak-text").each(function(){
+					var text = $(this).text();
+					if (text != ""){
+						console.log(text);	
+						$(this).text(response[text]);
+					}
+				});	
+			}catch (e){
+				console.log(e);
+			}
 
-				}
-
-			});			
 		}
 	}).done(function() {
 		// email.val("");
