@@ -34,11 +34,9 @@ function changeText() {
 	var jsonResponse = null;
 	$.ajax({
 	    contentType: 'application/json',
-
+	    dataType: 'json',
 		url: "/lang/ko.json",
 		type: "GET",
-	    dataType: 'json',
-
 		success: function(response) {
 			console.log(response);
 

@@ -10,7 +10,32 @@ $( document ).ready(function() {
 		// $(this).siblings('li').removeClass('active');
 	    $(this).addClass('active');
 	});
+
+	getJobsList();
 });
+
+function getJobsList(argument) {
+
+	$.getJSON( "http://blog.playsnak.com/?json=get_tag_posts&tag_slug=jobs&count=7", function( data ) {
+		$.each( data, function( key, val ) {
+  			if ( key == "posts") {
+				for ( var i = 0; i < val.length; i++ ) {
+
+					var jobtitle = val[i].title;
+					var joblink = val[i].url;
+	
+					$('.jobs-list').append(
+						$('<li>').append(
+							$('<a>').attr('href', val[i].url).append(jobtitle + "&nbsp;")
+						).append(
+							$('<button>').attr('class', 'btn btn-default btn-round-xs btn-xs').attr('formaction', joblink).attr('type', "submit").append("Apply Now")
+						)
+					);
+				}	  				
+  			}
+		})
+	});
+}
 
 $( "#btnSubscribe" ).click(function() {
 	$( "#btnSubscribe" ).blur();
