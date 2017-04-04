@@ -548,6 +548,58 @@ h2 > bdi.white-underline-title{
 	padding-top: 11px;
 }
 
+.blog-date{
+	font-family: Rajdhani;
+	font-size: 15px;
+	font-weight: 500;
+	color: #959595;
+
+}
+.blog-title{
+	font-family: Teko;
+	font-size: 28px;
+	font-weight: 500;
+	line-height: 0.9em;
+}
+.blog-body{
+	font-family: Rajdhani;
+	font-size: 17px;
+	font-weight: 500;
+	color: #959595;
+
+	max-height:75px;
+	display:block;
+	display:-webkit-box;
+	-webkit-line-clamp:3;
+	-webkit-box-orient:vertical;
+	overflow:hidden;
+	text-overflow:ellipsis ;
+}
+.blog-link{
+	font-size: 19px;
+    border-bottom: 2px solid #0092d0;
+    bottom : 2px;
+	line-height: 0.8em;
+}
+.blog-background {
+	background-color: rgba(0,0,0, 0.8);
+}
+.blog-icon {
+	position:absolute; 
+	left: 30px; 
+	top: 10px;
+}
+.blog-cell{
+	padding: 20px;
+}
+
+.blog-table{
+	padding-bottom: 20px;
+}
+
+.blog-image{
+    width: 100%;
+}
 
 /* ==== MEDIA QUERIES ==== */
 @media (min-width: 992px) {

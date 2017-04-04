@@ -1,8 +1,12 @@
 var form = $( "#myform" );
 
+window.onload = function () {
+	blogHeightNormalization()
+}
+
 $( document ).ready(function() {
 	form.validate();
-    // console.log( "document loaded" );
+
 	$(".segment-select").Segment();
 	
 	$('.nav li').click(function() {
@@ -12,9 +16,84 @@ $( document ).ready(function() {
 	});
 
 	getJobsList();
+	getBlogList();
+	getBlogList();
+
+	$(window).on('resize', function(){
+		blogHeightNormalization();
+	});
+
 });
 
-function getJobsList(argument) {
+function blogHeightNormalization() {
+	var maxHeight = 0;
+	$(".blog-background").each(function(){
+		if (maxHeight < $(this).height()){
+			maxHeight = $(this).height();
+		}
+	});
+
+	function updateHeight() {
+		$(".blog-background").each(function(){
+			$(this).height(maxHeight);
+		});
+	}
+
+	setTimeout(updateHeight, 1000);
+}
+
+function getBlogList() {
+	$.getJSON( "http://blog.playsnak.com/?json=get_tag_posts&tag_slug=news&count=20", function( data ) {
+		$.each( data, function( key, val ) {
+  			if ( key == "posts") {
+				for ( var i = 0; i < val.length; i++ ) {
+
+					var title = val[i].title_plain;
+					var content = val[i].excerpt;
+					var link = val[i].url;
+					var categories = val[i].categories;
+					var category = categories[0].title;
+					var type = val[i].type;
+					var published = moment(val[i].date).format('ll');
+					published += ", " + category
+					
+					// TBW, TODO, XXX 고치자 
+					var types = ["news", "game", "event"];
+					type = types[i%3];
+
+
+					$('#blog-list').append(
+						$('<div>').attr('class', 'col-lg-3 col-md-4 col-sm-6 col-xs-12 blog-table').append(
+							$('<div>').attr('class', 'blog-background').append(
+								$('<img>').attr('class', 'blog-icon').attr('src', 'assets/img/icon_' + type + '.png')
+							).append(
+								$('<img>').attr('class', 'blog-image').attr('src', 'assets/img/blog_smallimage0' + (parseInt(i)+1) + '.png')
+							).append(
+								$('<div>').attr('class', 'blog-cell').append(
+									$('<div>').attr('class', 'blog-date').append(published)
+								).append(
+									$('<div>').attr('class', 'blog-title blue-text').append(
+										
+										$('<a>').attr('href', link).append(title)
+									)
+								).append(
+									$('<div>').attr('class', 'blog-body').append(content)
+								).append(
+									$('<div>').append(
+										$('<a>').attr('class', 'blog-link').attr('href', link).append("Read more >")
+									)
+								)
+							)
+						)
+					);
+				}	  				
+  			}
+		})
+
+
+	});
+}
+function getJobsList() {
 
 	$.getJSON( "http://blog.playsnak.com/?json=get_tag_posts&tag_slug=jobs&count=7", function( data ) {
 		$.each( data, function( key, val ) {
