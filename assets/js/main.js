@@ -21,6 +21,7 @@ $( document ).ready(function() {
 
 	$(window).on('resize', function(){
 		blogHeightNormalization();
+		myMap();
 	});
 
 });
