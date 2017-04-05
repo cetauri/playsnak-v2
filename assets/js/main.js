@@ -24,7 +24,19 @@ $( document ).ready(function() {
 		myMap();
 	});
 
+	setEaseScroll();
 });
+
+function setEaseScroll() {
+
+	$(document).on("click", "a.page-scroll", function(e) {
+		var _this = $(this);
+		$("html, body").stop().animate({
+	    	scrollTop: $(_this.attr("href")).offset().top - 50
+		}, 1250, "easeInOutExpo"), 
+		e.preventDefault()
+	})
+}
 
 function blogHeightNormalization() {
 	var maxHeight = 0;
@@ -38,9 +50,27 @@ function blogHeightNormalization() {
 		$(".blog-background").each(function(){
 			$(this).height(maxHeight);
 		});
+
+		afterUpdate();
 	}
 
 	setTimeout(updateHeight, 1000);
+}
+
+function afterUpdate(){
+	window.sr = ScrollReveal();
+	sr.reveal(".blog-table", {
+        duration: 100,
+        // delay: 100,
+        scale: .3,
+        distance: "0px"
+    }, 200);
+
+	sr.reveal(".social", {
+        duration: 600,
+        scale: .3,
+        distance: "0px"
+    }, 200);
 }
 
 function getBlogList() {
@@ -90,10 +120,9 @@ function getBlogList() {
 				}	  				
   			}
 		})
-
-
 	});
 }
+
 function getJobsList() {
 
 	$.getJSON( "http://blog.playsnak.com/?json=get_tag_posts&tag_slug=jobs&count=7", function( data ) {
