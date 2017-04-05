@@ -101,7 +101,7 @@ function getJobsList() {
   			if ( key == "posts") {
 				for ( var i = 0; i < val.length; i++ ) {
 
-					var jobtitle = val[i].title;
+					var jobtitle = val[i].title.toUpperCase();
 					var joblink = val[i].url;
 	
 					$('.jobs-list').append(
