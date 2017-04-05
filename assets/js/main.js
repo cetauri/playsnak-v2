@@ -122,14 +122,15 @@ $( "#btnSubscribe" ).click(function() {
 
 	// https://jqueryvalidation.org/
 	if (!form.valid()){
-		alert("Email Address in invalid format");
+		// http://t4t5.github.io/sweetalert/
+		sweetAlert("Oops...", "Email Address in invalid format", "error");
 		return;
 	}
 	
 	var email = $("#subscribeInputEmail");
 	if(email.val() == ""){
 		email.focus();
-		alert("Please enter a valid email address.");
+		sweetAlert("Oops...", "Please enter a valid email address!", "error");
 		return;
 	}
 
@@ -141,12 +142,10 @@ $( "#btnSubscribe" ).click(function() {
 	  type: "POST"
 	}).done(function() {
 		email.val("");
-	  	alert("Thank you! :)");
+	  	swal("Good job!", "Your form has been submitted.", "success")
 	}).fail(function() {
-	    alert( "error" );
+	    alert( "something wrong!" );
 	})
-
-	// alert(":) valid email : " + email.val());
 });
 
 function myMap() {
