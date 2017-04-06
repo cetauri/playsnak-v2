@@ -61,6 +61,30 @@ a:hover {
 	color: #0092d0 !important;
 }
 
+a.darkgray:link, a.darkgray:visited {
+	color: #4a4a4a;
+}
+
+a.darkgray:hover {
+	text-decoration: none;
+	color: #4a4a4a !important;
+}
+
+a.blue:link, a.blue:visited {
+	color: #0092d0;
+}
+
+a.blue:hover {
+	text-decoration: none;
+	color: #0092d0 !important;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left:22px;
+}
+
 blockquote {
 	padding: 0;
 	border: none;
@@ -409,7 +433,7 @@ footer a:hover {
 }
 
 #carousel-descrption2{
-	padding-top:100px;
+	padding-top:65px;
 	text-align: center;
 	width: 100%;
 }
@@ -579,10 +603,11 @@ h2 > bdi.white-underline-title{
 }
 
 .col-text{
-	font-family: Teko;
-	font-weight: 400;
-	font-size: 2em;
+	font-family: 'Rajdhani';
+	font-weight: 500;
+	font-size: 1.8em;
 	color: white;
+	line-height: 1.5em;
 
 }
 
