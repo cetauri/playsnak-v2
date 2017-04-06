@@ -134,6 +134,10 @@ a.text-danger:hover {
 	color: white;
 }
 
+.fa {
+	color: white !important;
+}
+
 .badge.social.twitter:hover {
 	background: #55acee;
 }
