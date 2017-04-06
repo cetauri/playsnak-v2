@@ -135,7 +135,7 @@ function getJobsList() {
 	
 					$('.jobs-list').append(
 						$('<li>').append(
-							$('<a>').attr('href', val[i].url).append(jobtitle + "&nbsp;")
+							$('<a>').attr('href', val[i].url).attr('class', "darkgray").append(jobtitle + "&nbsp;")
 						).append(
 							$('<button>').attr('class', 'btn btn-default btn-round-xs btn-xs').attr('formaction', joblink).attr('type', "submit").append("Apply Now")
 						)
