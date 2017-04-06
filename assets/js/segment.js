@@ -17,7 +17,7 @@
 					$(this).addClass("active");
 					self.val($(this).attr('value'));
 
-						console.log($(this).text());
+						// console.log($(this).text());
 						changeText();
 
 				});
@@ -38,13 +38,13 @@ function changeText() {
 		url: "/lang/ko.json",
 		type: "GET",
 		success: function(response) {
-			console.log(response);
+			// console.log(response);
 
 			try{
 				$(".playanak-text").each(function(){
 					var text = $(this).text();
 					if (text != ""){
-						console.log(text);	
+						// console.log(text);	
 						$(this).text(response[text]);
 					}
 				});	
