@@ -277,7 +277,7 @@ footer a:hover {
 }
 
 .btn-round-lg{
-	border-radius: 25px;
+	border-radius: 30px;
 }
 .btn-round{
 	border-radius: 17px;
@@ -309,7 +309,20 @@ footer a:hover {
     line-height: 0.8em;
     text-decoration: none;
 	display: inline-block;
+	text-shadow: none;
 }
+.carousel-desc2{
+	font-size: 6em;
+	font-family: Teko;
+	font-weight: 500;
+	color: white;
+	position: relative;
+    line-height: 0.8em;
+    text-decoration: none;
+	display: inline-block;
+	text-shadow: none;
+}
+
 .carousel-desc-1{
 	font-size: 2.9em;
 	font-family: Teko;
@@ -318,6 +331,7 @@ footer a:hover {
 	position: relative;
     line-height: 0.8em;
     text-decoration: none;
+	text-shadow: none;
 }
 .carousel-desc-2{
 	font-size: 2.37em;
@@ -327,6 +341,7 @@ footer a:hover {
     position: relative;
     line-height: 1.3em;
     text-decoration: none;
+	text-shadow: none;
 }
 .carousel-desc-3{
 	font-size: 5em;
@@ -336,41 +351,61 @@ footer a:hover {
     position: relative;
     line-height: 0.7em;
     text-decoration: none;
+	text-shadow: none;
+}
+.carousel-desc-4{
+	font-size: 2.1em;
+	color: white;
+	font-family: Teko;
+	font-weight: 300;
+	position: relative;
+    line-height: 1em;
+    text-decoration: none;
+	text-shadow: none;
 }
 .carousel-desc-5{
-	font-size: 33px;
+	font-size: 3.1em;
 	color: black;
 	font-family: Teko;
 	font-weight: 300;
+	position: relative;
+    line-height: 0.8em;
+    text-decoration: none;
+	text-shadow: none;
 }
-.carousel-desc-4{
-	font-size: 40px;
-	color: white;
-	font-family: Teko;
-	font-weight: 300;
-}
-
 .carousel-desc-6{
-	font-size: 40px;
+	font-size: 3.2em;
 	color: white;
 	font-family: Teko;
 	font-weight: 300;
+	position: relative;
+    line-height: 1em;
+    text-decoration: none;
+	text-shadow: none;
 }
 #carousel-circle {
-	width: 600px;
-	height: 600px;
+	width: 512px;
+	height: 512px;
 	border-radius: 100%;
 	align-items: center;
-	display: flex;;
+	display: flex;
 	background-color: rgba(0, 146, 208, 0.8);
 }
 .carousel-caption {
+	padding-top:50px;
 	display: flex;
 	align-items: center;
     height: 100%;
     justify-content: center;
-}	
+}
+
 #carousel-descrption{
+	text-align: center;
+	width: 100%;
+}
+
+#carousel-descrption2{
+	padding-top:100px;
 	text-align: center;
 	width: 100%;
 }
@@ -380,8 +415,9 @@ footer a:hover {
 .jobs-link > a{
 	color: #0092d0;
     font-family: Teko;
-    font-size: 1.3em;
-    font-weight: 600;
+    font-size: 2em;
+    font-weight: 400;
+	line-height: 0.7em;
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
@@ -418,8 +454,9 @@ footer a:hover {
 	line-height: 1.4em;
 	text-align: left;
 	color: #4a4a4a;
-	list-style-type: none;
-	text-indent: -1.8em;
+	list-style-type: circle;
+	text-indent: 0;
+	list-style-position: outside;
 }
 
 .jobs-description {
@@ -496,6 +533,7 @@ mark{
 	font-family: 'Rajdhani';
 	font-size: 1.5em;	
 	font-weight: 500;
+	line-height: 1em;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }	
@@ -606,34 +644,40 @@ h2 > bdi.white-underline-title{
 	font-family: Rajdhani;
 	font-size: 15px;
 	font-weight: 500;
+	height: 22px;
 	color: #959595;
+	vertical-align: top;
 
 }
 .blog-title{
 	font-family: Teko;
-	font-size: 28px;
+	font-size: 26px;
 	font-weight: 500;
 	line-height: 0.9em;
+	padding-bottom: 8px;
+	padding-top:10px;
 }
 .blog-body{
 	font-family: Rajdhani;
 	font-size: 17px;
 	font-weight: 500;
 	color: #959595;
-
+	line-height:1em;
 	max-height:75px;
 	display:block;
 	display:-webkit-box;
-	-webkit-line-clamp:3;
+	-webkit-line-clamp:2;
 	-webkit-box-orient:vertical;
 	overflow:hidden;
 	text-overflow:ellipsis ;
 }
 .blog-link{
-	font-size: 19px;
+	font-size: 18px;
+	font-family: Teko;
+	font-weight: 500;
     border-bottom: 2px solid #0092d0;
     bottom : 2px;
-	line-height: 0.8em;
+	line-height: 2.5em;
 }
 .blog-background {
 	background-color: rgba(0,0,0, 0.8);
@@ -644,7 +688,10 @@ h2 > bdi.white-underline-title{
 	top: 10px;
 }
 .blog-cell{
-	padding: 20px;
+	padding-top: 14px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .blog-table{
@@ -776,7 +823,7 @@ h2 > bdi.white-underline-title{
 }
 
 
-@media screen and (max-width: 2600px) {
+@media screen and (max-width: 2650px) {
 	body {
 	font-size: 150%;
 	}
@@ -1100,6 +1147,153 @@ h2 > bdi.white-underline-title{
 	padding-right: 0px;
 	}
 
+	#carousel-descrption{
+		padding-top: 20px;
+		font-size: 80%;
+	}
+
+	#carousel-circle{
+		width: 380px;
+		height: 380px;
+		border-radius: 100%;
+		align-items: center;
+		display: flex;
+		background-color: rgba(0, 146, 208, 0.8);
+	}
+	#carousel-descrption2{
+		padding-top: 20px;
+		font-size: 100%;
+	}
+
+
+	#carousel-back-image1{
+		content: url('../img/main_image_ourgames_1920.png');
+	}
+	#carousel-back-image2{
+		content: url('../img/main_image_whoweare_1920.png');		
+	}
+}
+
+@media screen and  (max-width: 1400px) {
+	body {
+	font-size: 120%;
+	}
+    .row-vcenter {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -o-box;
+        display: -ms-flexbox;
+        -webkit-box-align: center;
+        -moz-box-align: center;
+        -o-box-align: center;
+        -ms-flex-align: center;
+
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -o-flex;
+        display: flex;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -o-align-items: center;
+        align-items: center;
+    }
+    .navbar-inverse{
+    	background-color: red !important;
+    }
+	
+	#aboutus-left{
+		Padding-top: 20px;
+		Padding-bottom: 0px;
+		Padding-left: 25px;
+		padding-right: 50px;
+		height: 500px;
+		display: table-cell;
+		vertical-align: middle;			
+	}
+	#aboutus-right{
+		height: 500px;
+	}
+	#games-left{
+		height: 500px;
+	}
+	#games-right{
+		Padding-top: 20px;
+		Padding-bottom: 0px;
+		Padding-left: 25px;
+		padding-right: 25px;
+		height: 500px;
+	}
+
+	#jobs_left{
+		background-color: #0092d0;
+		Padding-left: 25px;
+		Padding-right: 10px;
+		Padding-top: 10px;
+		Padding-bottom: 10px;
+		display: table-cell;
+		float: right;
+		
+	}
+	#jobs-title{		
+		Padding-top: 0px;
+		Padding-bottom: 0px;
+		Padding-left: 34px;
+		padding-right: 0px;
+		position: relative;
+		line-height: 0.7em;
+        text-decoration: none;
+        display: inline-block;
+	}
+	#jobs-description{
+	Padding-left: 34px;
+	}
+
+	#blog{
+	padding-top: 23px;
+	padding-bottom: 30px;
+	padding-left: 0px;
+	padding-right: 0px;
+	}
+
+	#newsletter{
+	padding-top: 24px;
+	padding-bottom: 29px;
+	padding-left: 0px;
+	padding-right: 0px;
+	}
+
+	#parteners{
+	padding-top: 21px;
+	padding-bottom: 30px;
+	padding-left: 0px;
+	padding-right: 0px;
+	}
+
+	#contact{
+	padding-top: 21px;
+	padding-bottom: 23px;
+	padding-left: 0px;
+	padding-right: 0px;
+	}
+	
+	#carousel-descrption{
+		padding-top: 20px;
+		font-size: 75%;
+	}
+
+	#carousel-circle{
+		width: 340px;
+		height: 340px;
+		border-radius: 100%;
+		align-items: center;
+		display: flex;
+		background-color: rgba(0, 146, 208, 0.8);
+	}
+	#carousel-descrption2{
+		padding-top: 20px;
+		font-size: 80%;
+	}
+
 
 	#carousel-back-image1{
 		content: url('../img/main_image_ourgames_1920.png');
@@ -1152,32 +1346,30 @@ h2 > bdi.white-underline-title{
         text-decoration: none;
         display: inline-block;
 	}
-	#carousel-descrption{
-		padding-top: 10px;
-		font-size: 100%;
-	}
-
+	
 	#aboutus > .container > .row-fluid {
 		display: block !important;
 	}
 	#aboutus-left{
-		padding-top: 20px;
+		padding-top: 0px;
 		padding-right: 20px;
-		height: 400px;
+		height: 220px;
+		vertical-align: top;
 	}
 	#aboutus-right{
-		height: 400px;
+		height: 300px;
 	}
 	#games > .container > .row-fluid {
 		display: block !important;
 	}
 	#games-left{
-		height: 400px;
+		height: 300px;
 	}
 	#games-right{
 		/*padding-left: 10px;*/
-		padding-top: 20px;
-		height: 400px;
+		padding-top: 0px;
+		height: 230px;
+		vertical-align: top;
 	}
 	#games-text {
 	    padding-left: 3%;
@@ -1188,6 +1380,24 @@ h2 > bdi.white-underline-title{
 	}
 	.carousel-caption{
 		/*display: none;*/
+	}
+	
+	#carousel-descrption{
+		padding-top: 10px;
+		font-size: 85%;
+	}
+	
+	#carousel-circle{
+		width: 280px;
+		height: 280px;
+		border-radius: 100%;
+		align-items: center;
+		display: flex;
+		background-color: rgba(0, 146, 208, 0.8);
+	}
+	#carousel-descrption2{
+		padding-top: 20px;
+		font-size: 100%;
 	}
 
 	#carousel-back-image1{
@@ -1218,10 +1428,35 @@ h2 > bdi.white-underline-title{
 	}
 	
 	#carousel-descrption{
+		padding-top: 10px;
+		font-size: 55%;
+	}
+	
+	#carousel-circle{
+		width: 250px;
+		height: 250px;
+		border-radius: 100%;
+		align-items: center;
+		display: flex;
+		background-color: rgba(0, 146, 208, 0.8);
+	}
+	#carousel-descrption2{
 		padding-top: 20px;
-		font-size: 60%;
+		font-size: 100%;
 	}
 
+	#carousel-circle{
+		width: 240px;
+		height: 240px;
+		border-radius: 100%;
+		align-items: center;
+		display: flex;
+		background-color: rgba(0, 146, 208, 0.8);
+	}
+	#carousel-descrption2{
+		padding-top: 30px;
+		font-size: 65%;
+	}
 	#aboutus-left{
 		padding-top: 0px;
 		padding-right: 20px;
@@ -1306,6 +1541,19 @@ h2 > bdi.white-underline-title{
 		padding-top: 210px;
 		font-size: 80%;
 	}
+	
+	#carousel-circle{
+		width: 300px;
+		height: 300px;
+		border-radius: 100%;
+		align-items: center;
+		display: flex;
+		background-color: rgba(0, 146, 208, 0.8);
+	}
+	#carousel-descrption2{
+		padding-top: 20px;
+		font-size: 80%;
+	}
 
 	#aboutus-left{
 		Padding-top: 0px;
@@ -1335,6 +1583,12 @@ h2 > bdi.white-underline-title{
 		vertical-align: top;
 		font-size: 90%;
 	}
+	
+	#jobs> .container > {
+		display: block !important;
+		background-color:#ffffff;
+	}
+
 	#jobs_left{
 	display:none;
 	}
