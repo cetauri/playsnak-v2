@@ -1380,24 +1380,24 @@ h2 > bdi.white-underline-title{
 		display: block !important;
 	}
 	#aboutus-left{
-		padding-top: 0px;
+		padding-top: 10px;
 		padding-right: 20px;
-		height: 220px;
+		height: 350px;
 		vertical-align: top;
 	}
 	#aboutus-right{
-		height: 300px;
+		height: 350px;
 	}
 	#games > .container > .row-fluid {
 		display: block !important;
 	}
 	#games-left{
-		height: 300px;
+		height: 350px;
 	}
 	#games-right{
 		/*padding-left: 10px;*/
-		padding-top: 0px;
-		height: 230px;
+		padding-top: 10px;
+		height: 350px;
 		vertical-align: top;
 	}
 	#games-text {
@@ -1489,21 +1489,21 @@ h2 > bdi.white-underline-title{
 	#aboutus-left{
 		padding-top: 0px;
 		padding-right: 20px;
-		height: 300px;
+		height: 350px;
 
 	}
 	#aboutus-right{
-		height: 300px;
+		height: 350px;
 	}
 
 	#games-left{
 		padding-top: 0px;
 		padding-right: 20px;
-		height: 300px;
+		height: 350px;
 	}
 	#games-right{
 		/*padding-left: 10px;*/
-		height: 400px;
+		height: 350px;
 	
 	#jobs_left{
 	display:none;
