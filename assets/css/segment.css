@@ -5,20 +5,24 @@
 	display:inline-block;
 	/*font-family: 'Lato',Georgia, Serif;*/
 	font-family: Teko;
+	border-radius: 30px;
 }
 .ui-segment span.option.active{
 	background-color: #0092d0;
 	color: white;
-}
+	border-radius: 30px;
+	}
 .ui-segment span.option{
-	font-size: 22px;
+	font-size: 17px;	
 	padding-left: 10px;
 	padding-right: 10px;
 	height: 20px;
 	text-align:center;
+	vertical-align:middle;
 	display:inline-block;
 	line-height: 25px;
 	margin: 0px;
+	border-radius: 30px;
 	float:left;
 	cursor:pointer;
 	border-right:1px solid #0092d0;
